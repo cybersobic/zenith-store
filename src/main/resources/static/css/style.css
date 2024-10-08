@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    font: Verdana;
+    font-family: sans-serif;
+}
+header {
+    background-color: #DA251D;
+    color: white;
+    padding: 0.8%;
+}

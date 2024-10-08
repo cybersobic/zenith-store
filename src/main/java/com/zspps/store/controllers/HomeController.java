@@ -10,7 +10,7 @@ public class HomeController
     @GetMapping("/")
     public String home(Model model)
     {
-        model.addAttribute("title", "Интернет-магазин Zenith");
+        model.addAttribute("title", "Zenith Софт - программное обеспечение для автоматизации производства");
         return "home";
     }
 

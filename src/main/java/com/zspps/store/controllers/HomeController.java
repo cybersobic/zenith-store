@@ -13,5 +13,4 @@ public class HomeController
         model.addAttribute("title", "Zenith Софт - программное обеспечение для автоматизации производства");
         return "home";
     }
-
 }

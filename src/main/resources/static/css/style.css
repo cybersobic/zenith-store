@@ -4,7 +4,54 @@
     font-family: sans-serif;
 }
 header {
+    position: grid;
     background-color: #DA251D;
+    grid-template-columns: 30% 20% 35% 15%;
     color: white;
-    padding: 0.8%;
+    padding: 0.5%;
+}
+.store_logo img {
+    width: 20%;
+}
+.store_catalog {
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    top: 1.9%;
+    left: 25%;
+    font-size: 125%;
+    background-color: #FFFFD3;
+    box-shadow: 2px 1px 1px black;
+    color: black;
+    padding: 0.5%;
+    border-radius: 5px;
+}
+.store_search {
+    width: 20%;
+    height: 5.8%;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    box-shadow: 2px 1px 1px black;
+    border-radius: 5px;
+    position: absolute;
+    background-color: white;
+    top: 1.9%;
+    left: 35%;
+}
+.search_input {
+    margin: 1%;
+}
+.search_input input {
+    font-size: 120%;
+    border: none;
+    height: 95%;
+    outline: none;
+}
+.search_button a {
+    text-decoration: none;
+}
+.store_login {
+    position: absolute;
+    top: 1.9%;
+    right: 10%;
 }

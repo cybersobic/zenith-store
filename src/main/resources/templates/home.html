@@ -3,12 +3,30 @@
 <head>
     <title th:text="${title}"></title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>zenITh Софт</h1>
+        <div class="store_logo">
+            <a class="logo" href=""><img src="images/logo.png" alt="main_logo_image"></a>
+        </div>
+        <a href="#" class="store_catalog">
+            <h4><span>&#9776;</span>Каталог</h4>
+        </a>
+        <div class="store_search">
+            <div class="search_input"><input type="text" placeholder="Поиск на сайте..."></div>
+            <div class="search_button"><a href="#">🔎</a></div>
+        </div>
+        <div class="store_login">
+            <div class="login_button">
+                <h4>Войти</h4>
+            </div>
+        </div>
     </header>
+    <div class="header_bottom">
+        <img src="/images/header_bottom.png" alt="">
+    </div>
     <main>
 
     </main>

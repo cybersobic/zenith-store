@@ -111,3 +111,12 @@ p {
 .functional_block:hover {
     transform: scale(1.1);
 }
+footer {
+    background-color: #DEDEDE;
+    padding: 2%;
+    margin: 0 13% 0 13%;
+    font-size: 80%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+}

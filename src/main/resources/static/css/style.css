@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    font: Verdana;
+    font: Arial;
     font-family: sans-serif;
 }
 body {
@@ -89,4 +89,25 @@ main {
     margin: 0 13% 0 13%;
     padding: 2%;
     background-color: white;
+}
+p {
+    text-indent: 2%;
+}
+.functional {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    text-align: center;
+}
+.functional_block {
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 4%;
+    margin: 8%;
+    transition: 0.8s;
+}
+.functional_block img {
+    width: 50%;
+}
+.functional_block:hover {
+    transform: scale(1.1);
 }

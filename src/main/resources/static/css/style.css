@@ -3,33 +3,36 @@
     font: Verdana;
     font-family: sans-serif;
 }
+body {
+    background-color: #ECECEC;
+}
 header {
     position: grid;
     background-color: #DA251D;
     color: white;
     padding: 0.5%;
 }
-.header_bottom img {
-    width: 100%;
-}
 .store_logo img {
     width: 20%;
+}
+#greeting {
+    text-align: center;
 }
 .store_catalog {
     text-decoration: none;
     display: block;
     position: absolute;
-    top: 1.9%;
+    top: 1.6%;
     left: 25%;
     font-size: 125%;
-    background-color: #FFFFB9;
+    background-color: #FFFF9A;
     box-shadow: 2px 1px 1px black;
     color: black;
     padding: 0.5%;
     border-radius: 5px;
 }
 .store_catalog:hover {
-    background-color: #FFFF93;
+    background-color: #FFFFD5;
 }
 .store_search {
     width: 30%;
@@ -40,7 +43,7 @@ header {
     border-radius: 5px;
     position: absolute;
     background-color: white;
-    top: 1.9%;
+    top: 1.6%;
     left: 35%;
 }
 .search_input {
@@ -67,18 +70,23 @@ header {
 .user_basket img {
     width: 3%;
     position: absolute;
-    top: 1.9%;
+    top: 1.3%;
     left: 85%;
 }
 .store_account img {
     width: 3%;
     position: absolute;
-    top: 1.9%;
+    top: 1.3%;
     left: 90%;
 }
 .store_help img {
     width: 3%;
     position: absolute;
-    top: 1.9%;
+    top: 1.3%;
     left: 95%;
+}
+main {
+    margin: 0 13% 0 13%;
+    padding: 2%;
+    background-color: white;
 }

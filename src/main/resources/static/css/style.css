@@ -6,9 +6,11 @@
 header {
     position: grid;
     background-color: #DA251D;
-    grid-template-columns: 30% 20% 35% 15%;
     color: white;
     padding: 0.5%;
+}
+.header_bottom img {
+    width: 100%;
 }
 .store_logo img {
     width: 20%;
@@ -20,15 +22,18 @@ header {
     top: 1.9%;
     left: 25%;
     font-size: 125%;
-    background-color: #FFFFD3;
+    background-color: #FFFFB9;
     box-shadow: 2px 1px 1px black;
     color: black;
     padding: 0.5%;
     border-radius: 5px;
 }
+.store_catalog:hover {
+    background-color: #FFFF93;
+}
 .store_search {
-    width: 20%;
-    height: 5.8%;
+    width: 30%;
+    height: 5.9%;
     display: grid;
     grid-template-columns: 90% 10%;
     box-shadow: 2px 1px 1px black;
@@ -42,16 +47,20 @@ header {
     margin: 1%;
 }
 .search_input input {
+    width: 96%;
     font-size: 120%;
+    color: grey;
     border: none;
     height: 95%;
     outline: none;
+    margin-right: 2%;
 }
-.search_button a {
+.search_button {
+    padding: 0;
+    font-size: 125%;
+    margin: 14%;
+    width: 70%;
+    height: 75%;;
+    display: block;
     text-decoration: none;
-}
-.store_login {
-    position: absolute;
-    top: 1.9%;
-    right: 10%;
 }

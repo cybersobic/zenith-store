@@ -64,3 +64,21 @@ header {
     display: block;
     text-decoration: none;
 }
+.user_basket img {
+    width: 3%;
+    position: absolute;
+    top: 1.9%;
+    left: 85%;
+}
+.store_account img {
+    width: 3%;
+    position: absolute;
+    top: 1.9%;
+    left: 90%;
+}
+.store_help img {
+    width: 3%;
+    position: absolute;
+    top: 1.9%;
+    left: 95%;
+}

@@ -8,21 +8,29 @@ body {
 }
 header {
     position: grid;
-    background-color: #DA251D;
+    background-image: url('../images/header_background.png');
+    background-size: cover; /* Масштабировать изображение, чтобы оно покрывало весь блок */
+    background-position: center; /* Центрировать изображение */
+    background-repeat: no-repeat; /* Избегать повторения изображения */
+    height: 5.2em;
     color: white;
     padding: 0.5%;
+    margin-bottom: 1%;
 }
 .store_logo img {
+    position: absolute;
     width: 20%;
+    top: 2%;
 }
 #greeting {
     text-align: center;
+    font-size: 145%;
 }
 .store_catalog {
     text-decoration: none;
     display: block;
     position: absolute;
-    top: 1.6%;
+    top: 2.5%;
     left: 25%;
     font-size: 125%;
     background-color: #FFFF9A;
@@ -43,7 +51,7 @@ header {
     border-radius: 5px;
     position: absolute;
     background-color: white;
-    top: 1.6%;
+    top: 2.5%;
     left: 35%;
 }
 .search_input {
@@ -70,25 +78,26 @@ header {
 .user_basket img {
     width: 3%;
     position: absolute;
-    top: 1.3%;
+    top: 2.5%;
     left: 85%;
 }
 .store_account img {
     width: 3%;
     position: absolute;
-    top: 1.3%;
+    top: 2.5%;
     left: 90%;
 }
 .store_help img {
     width: 3%;
     position: absolute;
-    top: 1.3%;
+    top: 2.5%;
     left: 95%;
 }
 main {
     margin: 0 13% 0 13%;
     padding: 2%;
     background-color: white;
+    border-radius: 10px;
 }
 p {
     text-indent: 2%;
@@ -112,6 +121,7 @@ p {
     transform: scale(1.1);
 }
 footer {
+border-radius: 10px;
     background-color: #DEDEDE;
     padding: 2%;
     margin: 0 13% 0 13%;

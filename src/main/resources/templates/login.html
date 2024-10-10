@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}"></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="login">
+        <div class="login_content">
+            <a id="login_logo" th:href="@{/}"><img src="images/logo.png" alt="logo_image"></a>
+            <h2>Авторизация:</h2>
+            <br>
+            <input id="login_value" type="text" placeholder="Логин"><br><br>
+            <input id="password_value" type="password" placeholder="Пароль"><br><br><br>
+            <a id="login_button" href="#">Войти</a>
+        </div>
+    </div>
+</body>
+</html>

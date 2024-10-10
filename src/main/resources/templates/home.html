@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="store_logo">
-            <a class="logo" href=""><img src="images/logo.png" alt="main_logo_image"></a>
+            <a class="logo" th:href="@{/}"><img src="images/logo.png" alt="main_logo_image"></a>
         </div>
         <a href="#" class="store_catalog">
             <h4><span>&#9776;</span>Каталог</h4>
@@ -24,7 +24,7 @@
             <a href="#" title="Корзина"><img src="images/basket_image.png" alt="user_basket"></a>
         </div>
         <div class="store_account">
-            <a href="#" title="Авторизация"><img src="images/user_default_image.png" alt="user_basket"></a>
+            <a href="/login" title="Авторизация"><img src="images/user_default_image.png" alt="user_basket"></a>
         </div>
         <div class="store_help">
             <a href="#" title="Поддержка"><img src="images/help_image.png" alt="user_basket"></a>

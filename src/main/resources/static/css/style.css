@@ -120,3 +120,38 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 33%);
 }
+.login {
+    width: 100%;
+    height: 100%;
+    background-color: #CCCCCC;
+    text-align: center;
+    position: absolute;
+}
+.login img {
+    width: 25%;
+}
+.login_content {
+    position: absolute;
+    top: 30%;
+}
+#login_button {
+    text-decoration: none;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    left: 45%;
+    color: black;
+    width: 10%;
+    height: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.login_button a {
+    text-decoration: none;
+}
+#login_button:hover {
+    transform: scale(1.05);
+}

@@ -9,12 +9,14 @@
 <body>
     <div class="login">
         <div class="login_content">
-            <a id="login_logo" th:href="@{/}"><img src="images/logo.png" alt="logo_image"></a>
+            <a id="login_logo" th:href="@{/}"><img src="images/logo.png" alt="logo_image"></a><br><br>
             <h2>Авторизация:</h2>
             <br>
             <input id="login_value" type="text" placeholder="Логин"><br><br>
             <input id="password_value" type="password" placeholder="Пароль"><br><br><br>
             <a id="login_button" href="#">Войти</a>
+            <br><br><br><br><br>
+            <p>Впервые на нашем сайте? <a th:href="@{/register}">Создайте аккаунт</a>.</p>
         </div>
     </div>
 </body>

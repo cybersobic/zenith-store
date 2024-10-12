@@ -177,9 +177,9 @@ border-radius: 10px;
 }
 .register_content {
     position: absolute;
-    top: 20%;
+    top: 15%;
 }
-#register_button {
+#registerButton {
     text-decoration: none;
     border: 1px solid grey;
     border-radius: 5px;
@@ -194,9 +194,9 @@ border-radius: 10px;
     align-items: center;
     transition: 0.5s;
 }
-.register_button a {
+.registerButton a {
     text-decoration: none;
 }
-#register_button:hover {
+#registerButton:hover {
     transform: scale(1.05);
 }

@@ -12,8 +12,10 @@
             <a id="login_logo" th:href="@{/}"><img src="images/logo.png" alt="logo_image"></a><br><br>
             <h2>Авторизация:</h2>
             <br>
-            <input id="login_value" type="text" placeholder="Логин"><br><br>
-            <input id="password_value" type="password" placeholder="Пароль"><br><br><br>
+            <form>
+                <p><label for="l_login">Логин: </label><input type="text" id="l_login"> <span>❗</span></p><br>
+                <p><label for="l_password"> Пароль: </label><input type="password" id="l_password"> <span>❗</span></p><br>
+            </form>
             <a id="login_button" href="#">Войти</a>
             <br><br><br><br><br>
             <p>Впервые на нашем сайте? <a th:href="@{/register}">Создайте аккаунт</a>.</p>

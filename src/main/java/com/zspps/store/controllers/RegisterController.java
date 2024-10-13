@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.zspps.store.repositories.UserRepository;
+import com.zspps.store.libs.Security;
 import com.zspps.store.models.User;
 
 @Controller
@@ -26,6 +27,9 @@ public class RegisterController
 
     @PostMapping("/register")
     public String registerUser(@ModelAttribute User user, Model model) {
+        String hashedPassword = Security.getHashData(user.getPassword());
+        user.setPassword(hashedPassword);
+
         userRepository.save(user);
         return "register";
     }

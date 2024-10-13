@@ -9,9 +9,9 @@ body {
 header {
     position: grid;
     background-image: url('../images/header_background.png');
-    background-size: cover; /* Масштабировать изображение, чтобы оно покрывало весь блок */
-    background-position: center; /* Центрировать изображение */
-    background-repeat: no-repeat; /* Избегать повторения изображения */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 5.2em;
     color: white;
     padding: 0.5%;

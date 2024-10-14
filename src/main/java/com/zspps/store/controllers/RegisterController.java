@@ -1,5 +1,7 @@
 package com.zspps.store.controllers;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -27,10 +29,25 @@ public class RegisterController
 
     @PostMapping("/register")
     public String registerUser(@ModelAttribute User user, Model model) {
+        if(!checkLogins(user.getLogin())) {
+            model.addAttribute("loginExistError", "Такой логин уже существует");
+            return "register";
+        }
+        
         String hashedPassword = Security.getHashData(user.getPassword());
         user.setPassword(hashedPassword);
 
         userRepository.save(user);
         return "register";
+    }
+
+    private boolean checkLogins(String login) {
+        List<String> logins = userRepository.findAllLogins();
+        for(String lg : logins) {
+            if(lg.equals(login)) {
+                return false;
+            }
+        }
+        return true;
     }
 }

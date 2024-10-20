@@ -3,128 +3,83 @@
     font: Arial;
     font-family: sans-serif;
 }
-body {
-    background-color: #ECECEC;
-}
 header {
+    background-color: grey;
     position: grid;
-    background-image: url('../images/header_background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 5.2em;
+    height: 5em;
     color: white;
     padding: 0.5%;
-    margin-bottom: 1%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .store_logo img {
     position: absolute;
     width: 20%;
     top: 2%;
-}
-#greeting {
-    text-align: center;
-    font-size: 145%;
+    left: 1%;
 }
 .store_catalog {
     text-decoration: none;
     display: block;
     position: absolute;
+    background-color: white;
+    border-radius: 5px;
     top: 2.5%;
     left: 25%;
     font-size: 125%;
-    background-color: #FFFF9A;
-    box-shadow: 2px 1px 1px black;
     color: black;
     padding: 0.5%;
-    border-radius: 5px;
-}
-.store_catalog:hover {
-    background-color: #FFFFD5;
-}
-.store_search {
-    width: 30%;
-    height: 5.9%;
-    display: grid;
-    grid-template-columns: 90% 10%;
-    box-shadow: 2px 1px 1px black;
-    border-radius: 5px;
-    position: absolute;
-    background-color: white;
-    top: 2.5%;
-    left: 35%;
-}
-.search_input {
-    margin: 1%;
-}
-.search_input input {
-    width: 96%;
-    font-size: 120%;
-    color: grey;
-    border: none;
-    height: 95%;
-    outline: none;
-    margin-right: 2%;
-}
-.search_button {
-    padding: 0;
-    font-size: 125%;
-    margin: 14%;
-    width: 70%;
-    height: 75%;;
-    display: block;
-    text-decoration: none;
 }
 .user_basket img {
     width: 3%;
     position: absolute;
     top: 2.5%;
-    left: 85%;
+    right: 6.5%;
 }
 .store_account img {
     width: 3%;
     position: absolute;
     top: 2.5%;
-    left: 90%;
-}
-.store_help img {
-    width: 3%;
-    position: absolute;
-    top: 2.5%;
-    left: 95%;
+    right: 2%;
 }
 main {
-    margin: 0 13% 0 13%;
-    padding: 2%;
     background-color: white;
-    border-radius: 10px;
 }
-p {
-    text-indent: 2%;
+.greeting {
+    padding-top: 2%;
+    margin: 1% 2% 1% 2%;
+    display: grid;
+    grid-template-columns: 40% 60%;
 }
-.functional {
+.features_title {
+    background-color: #CCCCCC;
+    text-align: center;
+    margin-top: 3.5em;
+    height: 5em;
+    display: grid;
+    place-items: center;
+    height: 8em;
+    color: black;
+}
+.features {
     display: grid;
     grid-template-columns: repeat(4, 25%);
     text-align: center;
 }
-.functional_block {
-    border-radius: 5px;
-    border: 1px solid grey;
+.feature_block {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 4%;
     margin: 8%;
     transition: 0.8s;
 }
-.functional_block img {
+.feature_block img {
     width: 50%;
 }
-.functional_block:hover {
+.feature_block:hover {
     transform: scale(1.1);
 }
 footer {
-border-radius: 10px;
-    background-color: #DEDEDE;
+    background-color: #CCCCCC;
     padding: 2%;
-    margin: 0 13% 0 13%;
     font-size: 80%;
     text-align: center;
     display: grid;
@@ -144,10 +99,13 @@ border-radius: 10px;
     position: absolute;
     top: 25%;
 }
-#login_button {
+.greeting_title {
+    padding: 25% 5% 5% 5%;
+    text-align: center;
+}
+#loginButton {
     text-decoration: none;
     border: 1px solid grey;
-    border-radius: 5px;
     background-color: white;
     position: absolute;
     left: 45%;
@@ -159,10 +117,10 @@ border-radius: 10px;
     align-items: center;
     transition: 0.5s;
 }
-.login_button a {
+.loginButton a {
     text-decoration: none;
 }
-#login_button:hover {
+#loginButton:hover {
     transform: scale(1.05);
 }
 .register {
@@ -182,7 +140,6 @@ border-radius: 10px;
 #registerButton {
     text-decoration: none;
     border: 1px solid grey;
-    border-radius: 5px;
     background-color: white;
     position: absolute;
     left: 45%;

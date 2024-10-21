@@ -13,8 +13,11 @@
             <h2>Авторизация:</h2>
             <br>
             <form action="/login" method="post">
-                <p><label for="l_login">Логин: </label><input type="text" id="l_login" name="login"></p><br>
-                <p><label for="l_password"> Пароль: </label><input type="password" id="l_password" name="password"></p><br>
+                <div class="login_place">
+                    <p><input type="text" id="l_login" name="login" placeholder="Логин"></p><br>
+                    <p><input type="password" id="l_password" name="password" placeholder="Пароль"></p>
+                </div>
+                <br><br>
                 <button type="submit" id="loginButton">Войти</button>
             </form>
             <br><br><br><br><br>

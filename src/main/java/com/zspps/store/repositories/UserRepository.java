@@ -1,6 +1,5 @@
 package com.zspps.store.repositories;
 
-import java.util.HashMap;
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;

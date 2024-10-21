@@ -14,11 +14,11 @@
         <div class="store_logo">
             <a class="logo" th:href="@{/}"><img src="images/logo.png" alt="main_logo_image"></a>
         </div>
-        <a href="#" class="store_catalog">
+        <a th:href="@{/catalog}" class="store_catalog">
             <h4><span>&#9776;</span>Каталог</h4>
         </a>
         <div class="user_basket">
-            <a href="#" title="Корзина"><img src="images/basket_image.png" alt="user_basket"></a>
+            <a th:href="@{/basket}" title="Корзина"><img src="images/basket_image.png" alt="user_basket"></a>
         </div>
         <div class="store_account">
             <a href="/login" title="Авторизация"><img src="images/user_default_image.png" alt="user_basket"></a>
@@ -54,7 +54,7 @@
             </div>
         </div>
         <div class="features_title">
-            <h4>Полнофункциональный комплекс компьютерных программ обеспечивает:</h4>
+            <h3>Полнофункциональный комплекс компьютерных программ обеспечивает:</h3>
         </div>
         <div class="features">
                 <div class="feature_block">

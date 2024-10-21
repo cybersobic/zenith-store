@@ -55,21 +55,25 @@ main {
     grid-template-columns: 40% 60%;
 }
 .features_title {
-    background-color: #CCCCCC;
+    background-color: #ECECEC;
     text-align: center;
     margin-top: 3.5em;
     height: 5em;
     display: grid;
     place-items: center;
-    height: 8em;
-    color: black;
+    height: 5em;
+    color: #004242;
 }
 .features {
     display: grid;
     grid-template-columns: repeat(4, 25%);
     text-align: center;
+    background-color: #ECECEC;
+    padding: 0 3% 3% 3%;
+
 }
 .feature_block {
+    background-color: white;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 4%;
@@ -190,4 +194,15 @@ footer {
 }
 #registerButton:hover {
     transform: scale(1.05);
+}
+.description {
+    background-color: #838996;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 47% 6% 47%;
+    padding: 5%;
+    color: white;
+}
+.official {
+    padding: 3%;
 }

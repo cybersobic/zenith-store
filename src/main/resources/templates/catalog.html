@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}"></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="store_logo">
+            <a class="logo" th:href="@{/}"><img src="images/logo.png" alt="main_logo_image"></a>
+        </div>
+        <div class="user_basket">
+            <a th:href="@{/basket}" title="Корзина"><img src="images/basket_image.png" alt="user_basket"></a>
+        </div>
+        <div class="store_account">
+            <a href="/login" title="Авторизация"><img src="images/user_default_image.png" alt="user_basket"></a>
+        </div>
+    </header>
+    <main>
+        <div class="catalog_title"><h2>Каталог товаров</h2></div>
+        <div class="catalog">
+            <div class="categories">
+                <br><h3>Категории:</h3>
+                <div class="categories_content">
+                    <a href="#">Программное обеспечение</a>
+                    <a href="#">Надстройки</a>
+                    <a href="#">Модули</a>
+                    <a href="#">Сервисы</a>
+                    <a href="#">Подписки</a>
+                    <a href="#">Услуги</a>
+                    <a href="#">Пакеты</a>
+                    <a href="#">Интеграции</a>
+                    <a href="#">Прочее</a>
+                </div>
+            </div>
+            <div class="products_list">
+                ...
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -5,12 +5,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class HomeController
+public class CatalogController
 {
-    @GetMapping("/")
-    public String home(Model model)
+    @GetMapping("/catalog")
+    public String getTitle(Model model)
     {
-        model.addAttribute("title", "Zenith Софт - Главная страница");
-        return "home";
+        model.addAttribute("title", "Zenith Софт - Каталог товаров");
+        return "catalog";
     }
 }

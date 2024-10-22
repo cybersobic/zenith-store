@@ -10,28 +10,43 @@
     <div class="register">
         <div class="register_content">
             <a id="register_logo" th:href="@{/}"><img src="images/logo.png" alt="logo_image"></a><br><br>
-            <h2>Регистрация:</h2>
+            <h2>Регистрация:</h2><br>
             <br>
             <form action="/register" method="post">
                 <div class="register_place">
-                    <p>
-                        <input type="text" id="r_login" name="login" placeholder="Придумайте логин" required>
-                    </p><br>
-                    <p>
-                        <input type="password" id="r_password1" name="password" placeholder="Придумайте пароль" required>
-                    </p><br>
-                    <p>
-                        <input type="password" id="r_password2" placeholder="Повторите пароль" required>
-                    </p><br>
-                    <p>
-                        <input type="email" id="r_email" name="email" placeholder="Введите адрес электронной почты" required>
-                    </p><br>
-                    <p>
-                        <input type="text" id="r_person" name="person" placeholder="Укажите контактное лицо">
-                    </p><br>
-                    <p>
-                        <input type="text" id="r_company" name="company" placeholder="Укажите название организации">
-                    </p><br><br>
+                    <div class="register_columns">
+                        <div></div>
+                        <div>
+                            <p>
+                                <input type="text" id="r_login" name="login" placeholder="Придумайте логин" required>
+                            </p><br>
+                            <p>
+                                <input type="password" id="r_password1" name="password" placeholder="Придумайте пароль" required>
+                            </p><br>
+                            <p>
+                                <input type="password" id="r_password2" placeholder="Повторите пароль" required>
+                            </p><br>
+                            <p>
+                                <input type="text" id="r_phone" name="phoneNumber" placeholder="Введите номер телефона" required>
+                            </p><br>
+                        </div>
+                        <div>
+                            <p>
+                                <input type="text" id="r_email" name="email" placeholder="Введите адрес электронной почты" required>
+                            </p><br>
+                            <p>
+                                <input type="text" id="r_first_name" name="firstName" placeholder="Ваше имя">
+                            </p><br>
+                            <p>
+                                <input type="text" id="r_last_name" name="lastName" placeholder="Ваша фамилия">
+                            </p><br>
+                            <p>
+                                <input type="text" id="r_company" name="company" placeholder="Укажите название организации">
+                            </p>
+                        </div>
+                        <div></div>
+                    </div>
+                    <br>
                     <button type="submit" id="registerButton">Создать аккаунт</button>
                 </div>
             </form>                    

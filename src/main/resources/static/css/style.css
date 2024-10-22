@@ -158,6 +158,10 @@ footer {
 .register_place {
     text-align: center;
 }
+.register_columns {
+    display: grid;
+    grid-template-columns: 28% 22% 22% 28%;
+}
 .register_place input {
     width: 20em;
     height: 2em;
@@ -179,7 +183,7 @@ footer {
 }
 .register_content {
     position: absolute;
-    top: 10%;
+    top: 15%;
 }
 #registerButton {
     border-radius: 5px;
@@ -190,7 +194,7 @@ footer {
     left: 45%;
     color: black;
     width: 10%;
-    height: 7%;
+    height: 9%;
     display: inline-flex;
     justify-content: center;
     align-items: center;

@@ -12,6 +12,9 @@
         <div class="store_logo">
             <a class="logo" th:href="@{/}"><img src="images/logo.png" alt="main_logo_image"></a>
         </div>
+        <div class="favorites">
+            <a th:href="@{/favorites}" title="Избранное"><img src="images/favorite_image.png" alt="favorite_image"></a>
+        </div>
         <div class="user_basket">
             <a th:href="@{/basket}" title="Корзина"><img src="images/basket_image.png" alt="user_basket"></a>
         </div>
@@ -20,10 +23,9 @@
         </div>
     </header>
     <main>
-        <div class="catalog_title"><h2>Каталог товаров</h2></div>
         <div class="catalog">
             <div class="categories">
-                <br><h3>Категории:</h3>
+                <br><h3>Категории товаров:</h3>
                 <div class="categories_content">
                     <a href="#">Программное обеспечение</a>
                     <a href="#">Надстройки</a>

@@ -46,6 +46,12 @@ header {
     top: 2.5%;
     right: 2%;
 }
+.favorites img {
+    width: 3%;
+    position: absolute;
+    top: 2.5%;
+    right: 11%;
+}
 main {
     background-color: white;
 }
@@ -98,7 +104,7 @@ footer {
 .login {
     width: 100%;
     height: 100%;
-    background-color: #6F8081;
+    background-color: #DCDCDC;
     text-align: center;
     position: absolute;
 }
@@ -108,7 +114,7 @@ footer {
 .login_content {
     position: absolute;
     top: 20%;
-    background-color: #6F8081;
+    background-color: #DCDCDC;
     border-radius: 10px;
     padding: 1%;
 }
@@ -164,7 +170,7 @@ footer {
 .register {
     width: 100%;
     height: 100%;
-    background-color: #6F8081;
+    background-color: #DCDCDC;
     text-align: center;
     position: absolute;
 }
@@ -207,19 +213,16 @@ footer {
 .official {
     padding: 3%;
 }
-.catalog_title {
-    text-align: center;
-    margin: 1.5%;
-}
 .catalog {
     display: grid;
     grid-template-columns: 20% 80%;
-    margin: 1% 2% 1% 2%;
+    margin: 1% 1% 1% 1%;
     border-radius: 5px;
 }
 .categories {
     background-color: #F3F3F7;
     border-radius: 5px;
+    height: 120%;
 }
 .categories h3 {
     text-align: center;
@@ -241,4 +244,5 @@ footer {
     border-radius: 5px;
     margin-left: 1%;
     padding: 2%;
+    height: 120%;
 }

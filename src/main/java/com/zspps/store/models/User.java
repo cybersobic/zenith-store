@@ -1,5 +1,6 @@
 package com.zspps.store.models;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -13,12 +14,26 @@ public class User
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name = "login", length = 24)
     private String login;
+
+    @Column(name = "password", length = 64)
     private String password;
+
+    @Column(name = "phone_number", length = 15)
     private String phone_number;
+
+    @Column(name = "email", length = 320)
     private String email;
+
+    @Column(name = "first_name", length = 35)
     private String first_name;
+
+    @Column(name = "last_name", length = 35)
     private String last_name;
+
+    @Column(name = "company", length = 50)
     private String company;
 
     public void setLogin(String login) 

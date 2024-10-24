@@ -1,3 +1,5 @@
+// Контроллер представления register.html
+
 package com.zspps.store.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;

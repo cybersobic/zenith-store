@@ -1,3 +1,5 @@
+// Контроллер представления catalog.html
+
 package com.zspps.store.controllers;
 
 import org.springframework.stereotype.Controller;

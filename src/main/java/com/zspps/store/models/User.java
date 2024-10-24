@@ -1,3 +1,5 @@
+// Класс-модель аккаунта пользователя
+
 package com.zspps.store.models;
 
 import jakarta.persistence.Column;

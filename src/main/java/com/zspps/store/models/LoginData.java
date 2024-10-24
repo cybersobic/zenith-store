@@ -1,4 +1,6 @@
-package com.zspps.store.libs;
+// Класс-модель данных для авторизации пользователя
+
+package com.zspps.store.models;
 
 public class LoginData
 {

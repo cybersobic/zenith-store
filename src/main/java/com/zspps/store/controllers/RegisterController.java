@@ -20,7 +20,7 @@ public class RegisterController
     
     // Обработка Get-запросов для представления register
     @GetMapping("/register")
-    public String setTitle(Model model)
+    public String GetRegisterData(Model model)
     {
         model.addAttribute("user", new User());
         model.addAttribute("title", "Zenith Софт - Регистрация");
@@ -29,7 +29,7 @@ public class RegisterController
 
     // Обработка Post-запросов для представления register
     @PostMapping("/register")
-    public String registerUser(@ModelAttribute User user) 
+    public String PostRegisterData(@ModelAttribute User user) 
     {
         userService.registerUser(user);
         return "register";

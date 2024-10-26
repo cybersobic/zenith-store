@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}"></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="store_logo">
+            <a class="logo" th:href="@{/}"><img src="images/logo.png" alt="main_logo_image"></a>
+        </div>
+        <div class="favorites">
+            <a th:href="@{/favorites}" title="Избранное"><img src="images/favorite_image.png" alt="favorite_image"></a>
+        </div>
+        <div class="user_basket">
+            <a th:href="@{/basket}" title="Корзина"><img src="images/basket_image.png" alt="user_basket"></a>
+        </div>
+        <div class="store_account">
+            <a href="/login" title="Авторизация"><img src="images/user_default_image.png" alt="user_basket"></a>
+        </div>
+    </header>
+    <main>
+    </main>
+</body>
+</html>

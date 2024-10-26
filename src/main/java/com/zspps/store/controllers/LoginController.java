@@ -20,7 +20,7 @@ public class LoginController
 
     // Обработка Get-запросов для представления login
     @GetMapping("/login")
-    public String setTitle(Model model)
+    public String GetLoginData(Model model)
     {
         model.addAttribute("title", "Zenith Софт - Авторизация");
         return "login";
@@ -28,7 +28,7 @@ public class LoginController
 
     // Обработка Post-запросов для представления login
     @PostMapping("/login")
-    public String loginUser(@ModelAttribute User user, Model model)
+    public String PostLoginData(@ModelAttribute User user, Model model)
     {
         if(userService.loginUser(user))
         {

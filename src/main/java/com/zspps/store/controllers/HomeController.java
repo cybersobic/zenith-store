@@ -11,7 +11,7 @@ public class HomeController
 {
     // Обработка Get-запросов для представления home
     @GetMapping("/")
-    public String home(Model model)
+    public String GetHomeData(Model model)
     {
         model.addAttribute("title", "Zenith Софт - Главная страница");
         return "home";

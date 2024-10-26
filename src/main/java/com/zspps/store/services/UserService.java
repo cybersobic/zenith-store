@@ -5,8 +5,8 @@ package com.zspps.store.services;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import com.zspps.store.libs.LoginData;
 import com.zspps.store.libs.Security;
-import com.zspps.store.models.LoginData;
 import com.zspps.store.models.User;
 import com.zspps.store.repositories.UserRepository;
 

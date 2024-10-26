@@ -1,11 +1,11 @@
-// Интерфейс-репозиторий для взаимодействия приложения с БД
+// Интерфейс-репозиторий для пользователя
 
 package com.zspps.store.repositories;
 
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import com.zspps.store.models.LoginData;
+import com.zspps.store.libs.LoginData;
 import com.zspps.store.models.User;
 
 public interface UserRepository extends JpaRepository<User, Long> 
@@ -23,6 +23,6 @@ public interface UserRepository extends JpaRepository<User, Long>
     List<String> findAllEmails();
 
     // Выборка всех наборов логина и пароля из БД
-    @Query("SELECT new com.zspps.store.models.LoginData(u.login, u.password) FROM User u")
+    @Query("SELECT new com.zspps.store.libs.LoginData(u.login, u.password) FROM User u")
     List<LoginData> findDataToLogin();
 }

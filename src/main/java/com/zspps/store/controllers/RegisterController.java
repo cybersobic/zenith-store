@@ -14,9 +14,11 @@ import com.zspps.store.models.User;
 @Controller
 public class RegisterController
 {
+    // Зависимость UserService
     @Autowired
     private UserService userService;
     
+    // Обработка Get-запросов для представления register
     @GetMapping("/register")
     public String setTitle(Model model)
     {
@@ -25,6 +27,7 @@ public class RegisterController
         return "register";
     }
 
+    // Обработка Post-запросов для представления register
     @PostMapping("/register")
     public String registerUser(@ModelAttribute User user) 
     {

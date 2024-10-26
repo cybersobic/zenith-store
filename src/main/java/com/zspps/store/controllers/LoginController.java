@@ -14,9 +14,11 @@ import com.zspps.store.services.UserService;
 @Controller
 public class LoginController
 {
+    // Зависимость UserService
     @Autowired
     private UserService userService;
 
+    // Обработка Get-запросов для представления login
     @GetMapping("/login")
     public String setTitle(Model model)
     {
@@ -24,6 +26,7 @@ public class LoginController
         return "login";
     }
 
+    // Обработка Post-запросов для представления login
     @PostMapping("/login")
     public String loginUser(@ModelAttribute User user, Model model)
     {

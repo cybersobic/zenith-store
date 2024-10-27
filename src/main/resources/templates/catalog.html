@@ -27,11 +27,15 @@
             <div class="categories">
                 <br><h3>Категории товаров:</h3>
                 <div class="categories_content" th:each="category : ${categories}">
-                    <a href="#" th:text="${category}">Категория</a>
+                    <a href="#" th:text="${category}"></a>
                 </div>
             </div>
-            <div class="products_list">
-                ...
+            <div class="product_list">
+                <div class="prods" th:each="product : ${products}">
+                    <h3 class="product_name" th:text="${product.name}"></h3><br>
+                    <p class="product_price" th:text="${product.price}"></p><br>
+                    <a class="buy_product" href="#">Купить</a>
+                </div>
             </div>
         </div>
     </main>

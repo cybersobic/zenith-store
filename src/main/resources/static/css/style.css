@@ -218,14 +218,13 @@ footer {
 }
 .catalog {
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 15% 85%;
     margin: 1% 1% 1% 1%;
     border-radius: 5px;
 }
 .categories {
     background-color: #F3F3F7;
     border-radius: 5px;
-    height: 120%;
 }
 .categories h3 {
     text-align: center;
@@ -242,10 +241,28 @@ footer {
     text-decoration: none;
     color: black;
 }
-.products_list {
-    background-color: #F3F3F7;
+.product_list {
     border-radius: 5px;
+    padding: 1%;
     margin-left: 1%;
-    padding: 2%;
-    height: 120%;
+    background-color: #F3F3F7;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    text-align: center;
+}
+.prods {
+    background-color: white;
+    margin: 5%;
+    padding: 5%;
+    border-radius: 5px;
+}
+.buy_product {
+    background-color: #6F8081;
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 1%;
 }

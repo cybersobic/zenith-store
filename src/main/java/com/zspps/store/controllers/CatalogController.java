@@ -7,7 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+
+import com.zspps.store.models.Product;
 import com.zspps.store.repositories.CategoryRepository;
+import com.zspps.store.repositories.ProductRepository;
 
 @Controller
 public class CatalogController
@@ -15,6 +18,10 @@ public class CatalogController
     // Зависимость CategoryRepository
     @Autowired
     private CategoryRepository categoryRepository;
+
+    // Зависимость ProductRepository
+    @Autowired
+    private ProductRepository productRepository;
 
     // Обработка Get-запросов для представления catalog
     @GetMapping("/catalog")
@@ -26,6 +33,10 @@ public class CatalogController
         System.out.println(categoryNames);
         model.addAttribute("categories", categoryNames);
         
+        List<Product> products = productRepository.findAll();
+        System.out.println(products);
+        model.addAttribute("products", products);
+
         return "catalog";
     }
 }

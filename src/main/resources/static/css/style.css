@@ -63,7 +63,7 @@ main {
 .features_title {
     background-color: #ECECEC;
     text-align: center;
-    margin-top: 3.5em;
+    padding: 3% 0 3% 0;
     height: 5em;
     display: grid;
     place-items: center;
@@ -76,7 +76,6 @@ main {
     text-align: center;
     background-color: #ECECEC;
     padding: 0 3% 3% 3%;
-
 }
 .feature_block {
     background-color: white;
@@ -93,7 +92,7 @@ main {
     transform: scale(1.1);
 }
 footer {
-    background-color: #CCCCCC;
+    background-color: #D0D0D0;
     padding: 2%;
     font-size: 80%;
     text-align: center;
@@ -205,16 +204,26 @@ footer {
 #registerButton:hover {
     transform: scale(1.05);
 }
-.description {
-    background-color: #838996;
+.description1 {
+    background-color: #707681;
     text-align: center;
     display: grid;
     grid-template-columns: 47% 6% 47%;
     padding: 5%;
     color: white;
+    margin-top: 5%;
+}
+.description2 {
+    background-color: #4B5057;
+    padding: 1%;
+    color: white;
+}
+.description2 p {
+    margin: 3%;
 }
 .official {
     padding: 3%;
+    background-color: #EFEFEF;
 }
 .catalog_title {
     background-color: #F3F3F7;

@@ -236,7 +236,6 @@ footer {
 .categories h3 {
     text-align: center;
     padding-bottom: 5%;
-    border-bottom: 1px solid grey;
 }
 .categories_content a:hover {
     background-color: white;

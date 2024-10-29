@@ -13,7 +13,7 @@ public class HomeController
     @GetMapping("/")
     public String GetHomeData(Model model)
     {
-        model.addAttribute("title", "Zenith Софт - Главная страница");
+        model.addAttribute("title", "Zenith Софт - Главная");
         return "home";
     }
 }

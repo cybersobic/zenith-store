@@ -5,7 +5,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="icon" href="images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js"></script>
 </head>
 <body>
     <header>
@@ -28,9 +27,9 @@
             <div class="categories">
                 <br><h3>Категории:</h3>
                 <div class="categories_content">
-                    <a href="#">Все товары</a>
-                    <div th:each="category : ${categories}">
-                        <a href="#" th:text="${category}"></a>
+                    <a class="category" href="#">Все товары</a>
+                    <div th:each="ctg : ${categories}">
+                        <a class="category" href="#" th:text="${ctg}"></a>
                     </div>
                 </div>
             </div>
@@ -42,16 +41,17 @@
                     <div class="product_content">
                         <h3 class="product_name" th:text="${product.name}"></h3><br>
                         <p><span class="product_price" th:text="${product.price}"></span> руб.</p><br>
-                        <a class="buy_product" href="#">Купить</a>
+                        <a class="buy_product" th:href="@{/buy}">Купить</a>
                     </div>
                     <div class="product_menu">
                         <a title="Подробнее о товаре" href="#"><img src="images/info_image.png" alt="product_info"></a>
-                        <a title="Добавить в корзину" href="#"><img src="images/basket_image.png" alt="add_to_basket"></a>
-                        <a title="Добавить в избранное" href="#"><img src="images/favorite_image.png" alt="add_to_favorites"></a>
+                        <a title="Добавить в корзину" href="#"><img src="images/add_to_basket.png" alt="add_to_basket"></a>
+                        <a title="Добавить в избранное" href="#"><img src="images/add_to_favorites.png" alt="add_to_favorites"></a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <script src="js/catalog.js"></script>
 </body>
 </html>

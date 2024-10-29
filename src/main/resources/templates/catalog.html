@@ -23,18 +23,32 @@
         </div>
     </header>
     <main>
+        <div class="catalog_title"><h2>Каталог товаров</h2></div>
         <div class="catalog">
             <div class="categories">
-                <br><h3>Категории товаров:</h3>
-                <div class="categories_content" th:each="category : ${categories}">
-                    <a href="#" th:text="${category}"></a>
+                <br><h3>Категории:</h3>
+                <div class="categories_content">
+                    <a href="#">Все товары</a>
+                    <div th:each="category : ${categories}">
+                        <a href="#" th:text="${category}"></a>
+                    </div>
                 </div>
             </div>
             <div class="product_list">
                 <div class="prods" th:each="product : ${products}">
-                    <h3 class="product_name" th:text="${product.name}"></h3><br>
-                    <p class="product_price" th:text="${product.price}"></p><br>
-                    <a class="buy_product" href="#">Купить</a>
+                    <div class="product_image">
+                        <img src="images/product_default_image.png" alt="product_default_image">
+                    </div>
+                    <div class="product_content">
+                        <h3 class="product_name" th:text="${product.name}"></h3><br>
+                        <p><span class="product_price" th:text="${product.price}"></span> руб.</p><br>
+                        <a class="buy_product" href="#">Купить</a>
+                    </div>
+                    <div class="product_menu">
+                        <a title="Подробнее о товаре" href="#"><img src="images/info_image.png" alt="product_info"></a>
+                        <a title="Добавить в корзину" href="#"><img src="images/basket_image.png" alt="add_to_basket"></a>
+                        <a title="Добавить в избранное" href="#"><img src="images/favorite_image.png" alt="add_to_favorites"></a>
+                    </div>
                 </div>
             </div>
         </div>

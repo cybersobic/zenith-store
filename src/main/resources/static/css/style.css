@@ -216,6 +216,13 @@ footer {
 .official {
     padding: 3%;
 }
+.catalog_title {
+    background-color: #F3F3F7;
+    padding: 0.5%;
+    margin: 1% 1% 0.5% 1%;
+    text-align: center;
+    border-radius: 5px;
+}
 .catalog {
     display: grid;
     grid-template-columns: 15% 85%;
@@ -243,18 +250,17 @@ footer {
 }
 .product_list {
     border-radius: 5px;
-    padding: 1%;
     margin-left: 1%;
     background-color: #F3F3F7;
-    display: grid;
-    grid-template-columns: repeat(3, 33%);
     text-align: center;
 }
 .prods {
     background-color: white;
-    margin: 5%;
-    padding: 5%;
+    margin: 1.7%;
+    padding: 1%;
     border-radius: 5px;
+    display: grid;
+    grid-template-columns: 30% 55% 15%;
 }
 .buy_product {
     background-color: #6F8081;
@@ -265,4 +271,11 @@ footer {
     margin: 0 auto;
     border-radius: 5px;
     padding: 1%;
+}
+.product_image img {
+    width: 35%;
+    margin-top: 1%;
+}
+.product_menu img {
+    width: 25%;
 }

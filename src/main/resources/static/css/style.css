@@ -45,12 +45,6 @@ header {
     top: 2.5%;
     right: 2%;
 }
-.favorites img {
-    width: 3%;
-    position: absolute;
-    top: 2.5%;
-    right: 11%;
-}
 main {
     background-color: white;
 }

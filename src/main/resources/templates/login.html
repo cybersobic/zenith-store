@@ -14,8 +14,8 @@
             <br>
             <form action="/login" method="post">
                 <div class="login_place">
-                    <p><input type="text" id="l_login" name="login" placeholder="Логин"></p><br>
-                    <p><input type="password" id="l_password" name="password" placeholder="Пароль"></p>
+                    <p><input type="text" id="l_login" name="login" placeholder="Логин" required></p><br>
+                    <p><input type="password" id="l_password" name="password" placeholder="Пароль" required></p>
                 </div>
                 <br><br>
                 <button type="submit" id="loginButton">Войти</button>
@@ -24,5 +24,6 @@
             <p>Впервые на нашем сайте? <a th:href="@{/register}">Создайте аккаунт</a>.</p>
         </div>
     </div>
+    <script src="js/login.js"></script>
 </body>
 </html>

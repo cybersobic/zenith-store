@@ -32,6 +32,6 @@ public class RegisterController
     public String PostRegisterData(@ModelAttribute User user) 
     {
         userService.registerUser(user);
-        return "register";
+        return "redirect:/login";
     }
 }

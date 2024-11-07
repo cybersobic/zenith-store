@@ -20,6 +20,9 @@ public class Category
     @Column(name = "name", length = 30)
     private String name;
 
+    @Column(name = "image_link", length = 70)
+    private String imageLink;
+
     public void setName(String name)
     {
         this.name = name;
@@ -28,5 +31,15 @@ public class Category
     public String getName() 
     {
         return name;
+    }
+
+    public void setImageLink(String imageLink)
+    {
+        this.imageLink = imageLink;
+    }
+
+    public String getImageLink() 
+    {
+        return imageLink;
     }
 }

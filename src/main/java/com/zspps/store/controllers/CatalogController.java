@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.zspps.store.models.Category;
 import com.zspps.store.models.Product;
 import com.zspps.store.repositories.CategoryRepository;
 import com.zspps.store.services.ProductService;
@@ -30,8 +31,9 @@ public class CatalogController
     {
         model.addAttribute("title", "Zenith Софт - Каталог товаров");
 
-        List<String> categoryNames = categoryRepository.findAllCategoryNames();
-        model.addAttribute("categories", categoryNames);
+        List<Category> categoryData = categoryRepository.findAllCategoryData();
+        System.out.println(categoryData);
+        model.addAttribute("categoryData", categoryData);
 
         return "catalog";
     }

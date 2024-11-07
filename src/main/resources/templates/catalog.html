@@ -21,9 +21,15 @@
             <div class="categories">
                 <br><h3>Категории:</h3>
                 <div class="categories_content">
-                    <a class="category" href="#">Все товары</a>
-                    <div th:each="ctg : ${categories}">
-                        <a class="category" href="#" th:text="${ctg}"></a>
+                    <a class="category" href="#">
+                        <img src="images/category_images/all.png" alt="category_image">
+                        <p>Все товары</p>
+                    </a>
+                    <div th:each="ctg : ${categoryData}">
+                        <a class="category" href="#">
+                            <img th:src="${ctg.imageLink}" alt="category_image">
+                            <p th:text="${ctg.name}"></p>
+                        </a>
                     </div>
                 </div>
             </div>

@@ -244,6 +244,9 @@ footer {
     text-decoration: none;
     color: black;
 }
+.category img {
+    width: 13%;
+}
 .product_list {
     border-radius: 5px;
     margin-left: 1%;

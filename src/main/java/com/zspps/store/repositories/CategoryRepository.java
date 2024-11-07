@@ -9,7 +9,7 @@ import com.zspps.store.models.Category;
 
 public interface CategoryRepository extends JpaRepository<Category, Long> 
 {
-    // Выборка всех названий категорий
-    @Query("SELECT c.name FROM Category c")
-    List<String> findAllCategoryNames();
+    // Выборка данных всех категорий
+    @Query("SELECT c FROM Category c")
+    List<Category> findAllCategoryData();
 }

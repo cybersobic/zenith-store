@@ -20,7 +20,7 @@ for (let i = 0; i < categoriesList.length; i++)
 // Функция для выделения категории
 function selectCategory(category)
 {
-    category.style.backgroundColor = "#637273";
+    category.style.backgroundColor = "#546973";
     category.style.color = "white";
 }
 

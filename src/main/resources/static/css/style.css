@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 header {
-    background-color: #637273;
+    background-color: #546973;
     position: grid;
     height: 5em;
     color: white;
@@ -229,6 +229,7 @@ footer {
 .categories {
     background-color: #F3F3F7;
     border-radius: 5px;
+    height: 33.5em;
 }
 .categories h3 {
     text-align: center;
@@ -252,6 +253,8 @@ footer {
     margin-left: 1%;
     background-color: #F3F3F7;
     text-align: center;
+    overflow-y: scroll;
+    height: 33.5em;
 }
 .prods {
     background-color: white;
@@ -262,7 +265,7 @@ footer {
     grid-template-columns: 30% 55% 15%;
 }
 .buy_product {
-    background-color: #637273;
+    background-color: #546973;
     color: white;
     text-decoration: none;
     display: block;
@@ -283,7 +286,7 @@ footer {
     padding-bottom: 5%;
 }
 .product_name {
-    color: #637273;
+    color: #546973;
     font-size: 140%;
     font-weight: bold;
 }

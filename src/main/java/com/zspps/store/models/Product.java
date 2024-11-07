@@ -29,6 +29,9 @@ public class Product
     @Column(name = "description", length = 700)
     private String description;
 
+    @Column(name = "image_link", length = 70)
+    private String imageLink;
+
     public void setName(String name) 
     {
         this.name = name;
@@ -67,5 +70,15 @@ public class Product
     public String getDescription() 
     {
         return description;
+    }
+
+    public void setImageLink(String imageLink) 
+    {
+        this.imageLink = imageLink;
+    }
+
+    public String getImageLink() 
+    {
+        return imageLink;
     }
 }

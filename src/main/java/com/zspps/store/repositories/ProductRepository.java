@@ -11,9 +11,9 @@ import com.zspps.store.models.Product;
 
 public interface ProductRepository extends JpaRepository<Product, Long> 
 {
-    @Query("SELECT p FROM Product p")
+    @Query("SELECT p FROM Product p ORDER BY id")
     List<Product> getAllProducts();
 
-    @Query("SELECT p FROM Product p WHERE p.category_id = :category_id")
+    @Query("SELECT p FROM Product p WHERE p.category_id = :category_id ORDER BY id")
     List<Product> findDataByCategoryId(@Param("category_id") int categoryId);
 }

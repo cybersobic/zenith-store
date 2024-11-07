@@ -71,7 +71,7 @@ async function requestProducts(i)
             
             productElement.innerHTML = `
                 <div class="product_image">
-                    <img src="images/product_default_image.png" alt="product_default_image">
+                    <img src="${product.imageLink}" alt="product_default_image">
                 </div>
                 <div class="product_content">
                     <a href="#" class="product_name">${product.name}</a><br>

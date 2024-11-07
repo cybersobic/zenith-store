@@ -7,10 +7,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.zspps.store.models.Product;
 import com.zspps.store.repositories.CategoryRepository;
-import com.zspps.store.repositories.ProductRepository;
+import com.zspps.store.services.ProductService;
 
 @Controller
 public class CatalogController
@@ -19,24 +21,27 @@ public class CatalogController
     @Autowired
     private CategoryRepository categoryRepository;
 
-    // Зависимость ProductRepository
+    // Зависимость ProductService
     @Autowired
-    private ProductRepository productRepository;
+    private ProductService productService;
 
-    // Обработка Get-запросов для представления catalog
     @GetMapping("/catalog")
-    public String GetCatalogData(Model model)
+    public String getCatalogPage(Model model)
     {
         model.addAttribute("title", "Zenith Софт - Каталог товаров");
 
         List<String> categoryNames = categoryRepository.findAllCategoryNames();
-        System.out.println(categoryNames);
         model.addAttribute("categories", categoryNames);
-        
-        List<Product> products = productRepository.findAll();
-        System.out.println(products);
-        model.addAttribute("products", products);
 
         return "catalog";
+    }
+
+    // Возвращение данных о товарах в JSON формате
+    @GetMapping("/catalog/products")
+    @ResponseBody
+    public List<Product> getCatalogRestData(@RequestParam(value = "categoryId", required = false) Integer categoryId) 
+    {
+        List<Product> products = productService.getProductsByCategory(categoryId);
+        return products;
     }
 }

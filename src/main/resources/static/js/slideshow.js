@@ -1,5 +1,3 @@
-// Файл обработки слайд-шоу на главной странице
-
 window.onload = function() {
   showSlides();
 };

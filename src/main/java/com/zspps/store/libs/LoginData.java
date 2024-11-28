@@ -1,5 +1,3 @@
-// Класс данных для авторизации пользователя
-
 package com.zspps.store.libs;
 
 public class LoginData

@@ -1,0 +1,60 @@
+.register_place {
+    text-align: center;
+}
+
+.register_columns {
+    display: grid;
+    grid-template-columns: 28% 22% 22% 28%;
+}
+
+.register_place input {
+    width: 20em;
+    height: 2em;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.register_place input::placeholder {
+    text-align: center;
+}
+
+.register {
+    width: 100%;
+    height: 100%;
+    background-color: #DCDCDC;
+    text-align: center;
+    position: absolute;
+}
+
+.register img {
+    width: 25%;
+}
+
+.register_content {
+    position: absolute;
+    top: 15%;
+}
+
+#registerButton {
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid grey;
+    background-color: white;
+    position: absolute;
+    left: 45%;
+    color: black;
+    width: 10%;
+    height: 9%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.registerButton a {
+    text-decoration: none;
+}
+
+#registerButton:hover {
+    transform: scale(1.05);
+}

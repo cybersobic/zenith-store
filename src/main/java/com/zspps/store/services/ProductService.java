@@ -1,5 +1,3 @@
-// Класс-сервис с бизнес-логикой для Product
-
 package com.zspps.store.services;
 
 import java.util.List;
@@ -11,7 +9,6 @@ import com.zspps.store.repositories.ProductRepository;
 @Service
 public class ProductService 
 {
-    // Зависимость ProductRepository
     @Autowired
     private ProductRepository productRepository;
 

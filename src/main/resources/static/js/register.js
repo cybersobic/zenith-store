@@ -1,5 +1,3 @@
-// Файл обработки регистрации пользователя
-
 var registerButton = document.getElementById("registerButton");
 
 function checkToRegister(event) 

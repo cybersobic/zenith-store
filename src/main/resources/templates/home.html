@@ -1,137 +1,203 @@
-<!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title th:text="${title}"></title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="icon" href="images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/slideshow.css">
-    <script src="js/slideshow.js"></script>
-</head>
-<body>
-    <header>
-        <div class="store_logo">
-            <a class="logo" th:href="@{/}"><img src="images/logo.png" alt="main_logo_image"></a>
-        </div>
-        <a th:href="@{/catalog}" class="store_catalog">
-            <h4><span>&#9776;</span>Каталог</h4>
-        </a>
-        <div class="store_account">
-            <a href="/login" title="Авторизация"><img src="images/user_default_image.png" alt="user_basket"></a>
-        </div>
-    </header>
-    <main>
-        <div class="greeting">
-            <div class="greeting_title">
-                <h2>Zenith SPPS - это система оперативно-календарного планирования и диспетчерского контроля</h2><br>
-                <p><p>Управление и оптимизация производственной деятельности в
-                    режиме реального времени. Планирование, отслеживание и документация
-                    производственных процессов от начала выполнения заказа до выпуска готовой продукции.</p>
-                <br></p>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Интернет-магазин программного обеспечения Zenith SPPS" />
+        <meta name="author" content="Сергей Соболев" />
+        <title th:text="${title}"></title>
+        <link rel="icon" type="image/x-icon" href="images/icon.png" />
+        <link href="css/main.css" rel="stylesheet" />
+        <link href="css/home.css" rel="stylesheet" />
+        <link href="css/slideshow.css" rel="stylesheet" />
+        <script src="js/slideshow.js"></script>
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-light static-top header">
+            <div class="container">
+                <a class="navbar-brand" th:href="@{/}"><img src="images/logo.png" width="330px" alt="logo_image"></a>
+                <a class="btn btn-primary" th:href="@{/catalog}">Каталог товаров</a>
+                <a class="btn btn-primary" href="/login">Войти в аккаунт</a>
             </div>
-            <div class="greeting_slideshow">
-                <div class="slideshow-container">
-                    <div class="Slides fade">
-                        <img src="images/slideshow1.png" alt="slide1" style="width:100%" class="img_sld">
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6">
+                        <div class="text-center text-white">
+                            <!-- Page heading-->
+                            <div class="greeting">
+                                <div class="greeting_text">
+                                    <h1 class="mb-5">Zenith SPPS - это система оперативно-календарного планирования и диспетчерского контроля</h1>
+                                    <p>
+                                        Управление и оптимизация производственной деятельности в
+                                        режиме реального времени. Планирование, отслеживание и документация
+                                        производственных процессов от начала выполнения заказа до выпуска готовой продукции.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="Slides fade">
-                        <img src="images/slideshow2.png" alt="slide2" style="width:100%" class="img_sld">
+                </div>
+            </div>
+        </header>
+        <!-- Testimonials-->
+        <section class="testimonials text-center bg-light">
+            <div class="container">
+                <h2 class="mb-5">Полнофункциональный комплекс программ обеспечивает:</h2>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="images/planning.jpeg" alt="planning_image" />
+                            <h5>Оперативно-календарное планирование</h5>
+                            <p class="font-weight-light mb-0">
+                                Осуществление текущей деятельности планово-экономических служб в течение короткого периода
+                            </p>
+                        </div>
                     </div>
-                    <div class="Slides fade">
-                        <img src="images/slideshow3.png" alt="slide3" style="width:100%" class="img_sld">
+                    <div class="col-lg-4">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="images/worker.jpg" alt="worker_image" />
+                            <h5>Диспетчерский контроль</h5>
+                            <p class="font-weight-light mb-0">
+                                Равномерная и бесперебойная работа предприятия осуществляется только при четком контроле и 
+                                регулировании производства
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="images/controlling.jpg" alt="controlling_image" />
+                            <h5>Комплексное управление производством</h5>
+                            <p class="font-weight-light mb-0">
+                                Отслеживание, оптимизация и документация производственных процессов в режиме реального времени
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="images/document.jpg" alt="document_image" />
+                            <h5>Автоматизированный документооборот</h5>
+                            <p class="font-weight-light mb-0">
+                                Создание, управление доступом, распространение и контроль 
+                                над потоками документов в организации
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <br>
-                <div style="text-align:center">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
             </div>
-        </div>
-        <div class="description1">
-            <div>
-                <p>Разработка системы ведётся с 1996 года. К настоящему времени Zenith SPPS 
-                    стала одной из наиболее проработанных и доступных систем в своем классе. 
-                    Она способна работать как в составе информационной системы предприятия, так 
-                    и полностью автономно. Основное инновационное достоинство системы заключается 
-                    в том, что эффективные механизмы производственного диспетчирования в ней органично 
-                    сочетаются с общепринятыми инструментами бизнес-приложения.</p>
-            </div>
-            <div></div>
-            <div>
-                Основное инновационное достоинство системы заключается в том, что эффективные механизмы 
-                диспетчеризации производства в ней органично сочетаются с общепринятыми инструментами 
-                бизнес-приложения. Интерфейс и справочная документация спроектированы так, чтобы конечный 
-                пользователь мог максимально быстро сконцентрироваться на решаемой профессиональной задаче, не 
-                отвлекаясь на программные особенности системы.
-            </div>
-        </div>
-        <div class="features_title">
-            <h3>Полнофункциональный комплекс компьютерных программ обеспечивает:</h3>
-        </div>
-        <div class="features">
-                <div class="feature_block">
-                    <img src="images/planning.png" alt="planning_image"><br><br>
-                    <p>Оперативно-календарное планирование</p>
-                </div>
-                <div class="feature_block">
-                    <img src="images/worker.png" alt="worker_image"><br><br>
-                    <p>Диспетчерский контроль</p>
-                </div>
-                <div class="feature_block">
-                    <img src="images/controlling.png" alt="controlling_image"><br><br>
-                    <p>Комплексное управление производством</p>
-                </div>
-                <div class="feature_block">
-                    <img src="images/document.png" alt="document_image"><br><br>
-                    <p>Автоматизированный документооборот</p>
-                </div>
-            </div>
-            <div class="description2">
-                <ul>
-                    <li>
-                        <p>
-                            MES-система Zenith SPPS - одна из наиболее проработанных и доступных систем класса MES, 
-                            которая может стать как хорошим расширением ERP-системы предприятия, так и работать 
-                            самостоятельно. Принцип функционирования системы заключается в планировании мощностей 
-                            и непрерывной поддержке производственного расписания на основе данных о состоянии и 
-                            загрузке оборудования (станки, инструментальные средства и т.п.) и наличия ресурсов 
-                            в каждый момент времени.
+        </section>
+        <!-- Image Showcases-->
+        <section class="showcase">
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('images/opis1.jpg')"></div>
+                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                        <h2>Надёжность</h2>
+                        <p class="lead mb-0">
+                            Разработка системы ведётся с 1996 года. К настоящему времени Zenith SPPS 
+                            стала одной из наиболее проработанных и доступных систем в своем классе. 
+                            Она способна работать как в составе информационной системы предприятия, так 
+                            и полностью автономно. Основное инновационное достоинство системы заключается 
+                            в том, что эффективные механизмы производственного диспетчирования в ней органично 
+                            сочетаются с общепринятыми инструментами бизнес-приложения.
                         </p>
-                    </li>
-                    <li>
-                        <p>
-                            MES-система Zenith SPPS интегрирует в единое целое оперативное 
-                            календарное планирование (расчёт, коррекцию и компьютерную поддержку производственных 
-                            графиков) и диспетчерский контроль за движением и наличием комплектующих от формирования 
-                            заказа до выпуска готовой продукции. Система может получать данные из модулей 
-                            автоматизированной технологической подготовки производства; поддерживается настраиваемый 
-                            ввод всех необходимых данных. Результаты работы системы могут быть сохранены в файлах 
-                            различных форматов (XLS, HTML, XML и др.) и служить исходными данными для других 
-                            бизнес-приложений.
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-lg-6 text-white showcase-img" style="background-image: url('images/opis2.jpeg')"></div>
+                    <div class="col-lg-6 my-auto showcase-text">
+                        <h2>Уникальность</h2>
+                        <p class="lead mb-0">
+                            Основное инновационное достоинство системы заключается в том, что эффективные механизмы 
+                            диспетчеризации производства в ней органично сочетаются с общепринятыми инструментами 
+                            бизнес-приложения. Интерфейс и справочная документация спроектированы так, чтобы конечный 
+                            пользователь мог максимально быстро сконцентрироваться на решаемой профессиональной задаче, не 
+                            отвлекаясь на программные особенности системы.
                         </p>
-                    </li>
-                </ul>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('images/opis3.jpg')"></div>
+                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                        <h2>Функциональность</h2>
+                        <p class="lead mb-0">
+                            Zenith SPPS осуществляет управление и оптимизацию производственной деятельности, 
+                            в режиме реального времени планирует, отслеживает, оптимизирует и документирует
+                            производственные процессы от начала выполнения заказа до выпуска готовой 
+                            продукции. Система имеет развитые функции, предназначенные для расчета,
+                            анализа и коррекции производственного расписания в режиме реального времени.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="official">
-                <p>Получить подробную информацию о Zenith SPPS от разработчика или попробовать демо-версию можно на нашем <span><a href="http://www.zspps.ru/">основном 
-                        веб-ресурсе</a></span>.</p>
+        </section>
+
+        <div class="description2">
+            <ul>
+                <li>
+                    <p>
+                        MES-система Zenith SPPS - одна из наиболее проработанных и доступных систем класса MES, 
+                        которая может стать как хорошим расширением ERP-системы предприятия, так и работать 
+                        самостоятельно. Принцип функционирования системы заключается в планировании мощностей 
+                        и непрерывной поддержке производственного расписания на основе данных о состоянии и 
+                        загрузке оборудования (станки, инструментальные средства и т.п.) и наличия ресурсов 
+                        в каждый момент времени.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        MES-система Zenith SPPS интегрирует в единое целое оперативное 
+                        календарное планирование (расчёт, коррекцию и компьютерную поддержку производственных 
+                        графиков) и диспетчерский контроль за движением и наличием комплектующих от формирования 
+                        заказа до выпуска готовой продукции. Система может получать данные из модулей 
+                        автоматизированной технологической подготовки производства; поддерживается настраиваемый 
+                        ввод всех необходимых данных. Результаты работы системы могут быть сохранены в файлах 
+                        различных форматов (XLS, HTML, XML и др.) и служить исходными данными для других 
+                        бизнес-приложений.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="official">
+            <p>Получить подробную информацию о Zenith SPPS от разработчика или попробовать демо-версию можно на нашем <span><a href="http://www.zspps.ru/">основном 
+                    веб-ресурсе</a></span>.</p>
+        </div>
+        <!-- Footer-->
+        <footer class="footer bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+                        <p class="text-muted small mb-4 mb-lg-0">&copy; Zenith Store 2025. Все права защищены.</p>
+                    </div>
+                    <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item me-4">
+                                <p><b>Разработчик программного обеспечения:</b></p>
+                            </li>
+                            <li class="list-inline-item me-4">
+                                <p>Высочин Сергей Владимирович</p>
+                            </li>
+                            <li class="list-inline-item me-4">
+                                <p>vysochin@mail.ru</p>
+                            </li>
+                        </ul>
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item me-4">
+                                <p><b>Разработчик программного обеспечения:</b></p>
+                            </li>
+                            <li class="list-inline-item me-4">
+                                <p>Соболев Сергей Сергеевич</p>
+                            </li>
+                            <li class="list-inline-item me-4">
+                                <p>cybersobic@gmail.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-    </main>
-    <footer>
-        <div>
-            <p><b>vysochin@mail.ru</b></p>
-            <p><b>cybersobic@gmail.com</b></p>
-        </div>
-        <div>
-            <h4>Разработчик программного обеспечения:</h4>
-            <p>Высочин Сергей Владимирович</p>
-        </div>
-        <div>
-            <h4>Разработчик веб-ресурса:</h4>
-            <p>Соболев Сергей Сергеевич</p>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>

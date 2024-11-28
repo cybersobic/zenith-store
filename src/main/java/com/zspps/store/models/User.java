@@ -1,5 +1,3 @@
-// Класс-модель аккаунта пользователя
-
 package com.zspps.store.models;
 
 import jakarta.persistence.Column;
@@ -24,16 +22,16 @@ public class User
     private String password;
 
     @Column(name = "phone_number", length = 15)
-    private String phone_number;
+    private String phoneNumber;
 
     @Column(name = "email", length = 320)
     private String email;
 
     @Column(name = "first_name", length = 35)
-    private String first_name;
+    private String firstName;
 
     @Column(name = "last_name", length = 35)
-    private String last_name;
+    private String lastName;
 
     @Column(name = "company", length = 50)
     private String company;
@@ -60,12 +58,12 @@ public class User
 
     public void setPhoneNumber(String phone_number) 
     {
-        this.phone_number = phone_number;
+        this.phoneNumber = phone_number;
     }
 
     public String getPhoneNumber() 
     {
-        return phone_number;
+        return phoneNumber;
     }
 
     public void setEmail(String email) 
@@ -80,22 +78,22 @@ public class User
 
     public void setFirstName(String first_name) 
     {
-        this.first_name = first_name;
+        this.firstName = first_name;
     }
 
     public String getFirstName() 
     {
-        return first_name;
+        return firstName;
     }
 
     public void setLastName(String last_name) 
     {
-        this.last_name = last_name;
+        this.lastName = last_name;
     }
 
     public String getLastName() 
     {
-        return last_name;
+        return lastName;
     }
 
     public void setCompany(String company) 

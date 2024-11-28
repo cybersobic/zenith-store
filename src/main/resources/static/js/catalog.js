@@ -1,14 +1,10 @@
-// Изначально выделяем первую категорию
 var categoriesList = document.getElementsByClassName("category");
 selectCategory(categoriesList[0]);
 
-// Изначальный вывод всех товаров
 requestProducts(0);
 
-// Обработчик события нажатия на каждую категорию
 for (let i = 0; i < categoriesList.length; i++) 
 {
-    // Обработчики нажатий по категориям
     categoriesList[i].addEventListener("click", function() 
     {
         resetCategories();
@@ -17,14 +13,12 @@ for (let i = 0; i < categoriesList.length; i++)
     });
 }
 
-// Функция для выделения категории
 function selectCategory(category)
 {
     category.style.backgroundColor = "#546973";
     category.style.color = "white";
 }
 
-// Функция для сброса стилей всех категорий
 function resetCategories() 
 {
     for (let i = 0; i < categoriesList.length; i++) 
@@ -34,7 +28,6 @@ function resetCategories()
     }
 }
 
-// Функция запроса товаров по выбранной категории
 async function requestProducts(i)
 {
     try
@@ -78,7 +71,7 @@ async function requestProducts(i)
                     <p class="product_price">${product.price} руб.</p><br>
                 </div>
                 <div class="product_menu">
-                    <a class="buy_product" href="/buy">Купить</a>
+                    <a class="buy_product" href="#">Купить</a>
                 </div>
             `;
 

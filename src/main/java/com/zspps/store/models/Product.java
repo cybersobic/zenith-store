@@ -1,5 +1,3 @@
-// Класс-модель товара
-
 package com.zspps.store.models;
 
 import jakarta.persistence.Column;
@@ -21,7 +19,7 @@ public class Product
     private String name;
 
     @Column(name = "category_id")
-    private int category_id;
+    private int categoryId;
 
     @Column(name = "price")
     private int price;
@@ -44,12 +42,12 @@ public class Product
 
     public void setCategoryId(int category_id) 
     {
-        this.category_id = category_id;
+        this.categoryId = category_id;
     }
 
     public int getCategoryId() 
     {
-        return category_id;
+        return categoryId;
     }
 
     public void setPrice(int price) 

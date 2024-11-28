@@ -1,12 +1,10 @@
-// Класс безопасности сайта
 package com.zspps.store.libs;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-public class Security 
+public class Security
 {
-    // Метод хеширования пароля по алгоритму SHA-256
     public static String getHashData(String data) 
     {
         try 

@@ -1,5 +1,3 @@
-// Класс-сервис с бизнес-логикой для User
-
 package com.zspps.store.services;
 
 import java.util.List;
@@ -13,11 +11,9 @@ import com.zspps.store.repositories.UserRepository;
 @Service
 public class UserService
 {
-    // Инициализация зависимости UserRepository
     @Autowired
     private UserRepository userRepository;
 
-    // Метод регистрации пользователя на сайте
     public void registerUser(User user)
     {
         if(checkLogins(user.getLogin()) && 
@@ -30,7 +26,6 @@ public class UserService
         }
     }
 
-    // Проверка на существование логина при регистрации
     public boolean checkLogins(String login) 
     {
         List<String> logins = userRepository.findAllLogins();
@@ -44,7 +39,6 @@ public class UserService
         return true;
     }
 
-    // Проверка на существование номера телефона при регистрации
     public boolean checkPhoneNumbers(String phoneNumber) 
     {
         List<String> phoneNumbers = userRepository.findAllPhoneNumbers();
@@ -58,7 +52,6 @@ public class UserService
         return true;
     }
 
-    // Проверка на существование почты при регистрации
     public boolean checkEmails(String email) 
     {
         List<String> emails = userRepository.findAllEmails();
@@ -72,7 +65,6 @@ public class UserService
         return true;
     }
 
-    // Метод авторизации пользователя на сайте
     public boolean loginUser(User user)
     {
         List<LoginData> loginData = userRepository.findDataToLogin();

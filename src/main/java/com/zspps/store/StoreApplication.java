@@ -1,5 +1,3 @@
-// Главный класс для запуска приложения
-
 package com.zspps.store;
 
 import org.springframework.boot.SpringApplication;

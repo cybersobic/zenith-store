@@ -1,5 +1,3 @@
-// Контроллер представления catalog.html
-
 package com.zspps.store.controllers;
 
 import java.util.List;
@@ -9,7 +7,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-
 import com.zspps.store.models.Category;
 import com.zspps.store.models.Product;
 import com.zspps.store.repositories.CategoryRepository;
@@ -18,11 +15,9 @@ import com.zspps.store.services.ProductService;
 @Controller
 public class CatalogController
 {
-    // Зависимость CategoryRepository
     @Autowired
     private CategoryRepository categoryRepository;
 
-    // Зависимость ProductService
     @Autowired
     private ProductService productService;
 
@@ -38,7 +33,6 @@ public class CatalogController
         return "catalog";
     }
 
-    // Возвращение данных о товарах в JSON формате
     @GetMapping("/catalog/products")
     @ResponseBody
     public List<Product> getCatalogRestData(@RequestParam(value = "categoryId", required = false) Integer categoryId) 

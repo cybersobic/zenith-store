@@ -1,5 +1,3 @@
-// Контроллер представления login.html
-
 package com.zspps.store.controllers;
 
 import java.util.HashMap;
@@ -17,19 +15,16 @@ import com.zspps.store.services.UserService;
 @Controller
 public class LoginController
 {
-    // Зависимость UserService
     @Autowired
     private UserService userService;
 
-    // Обработка Get-запросов для представления login
     @GetMapping("/login")
-    public String GetLoginData(Model model)
+    public String getLoginData(Model model)
     {
         model.addAttribute("title", "Zenith Софт - Авторизация");
         return "login";
     }
 
-    // Обработка Post-запросов для представления login
     @PostMapping("/login")
     @ResponseBody
     public Map<String, Boolean> postLoginData(@RequestBody User user) {

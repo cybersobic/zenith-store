@@ -14,11 +14,15 @@
     </head>
     <body>
         <!-- Navigation-->
-        <nav class="navbar navbar-light static-top header">
-            <div class="container">
-                <a class="navbar-brand" th:href="@{/}"><img src="images/logo.png" width="330px" alt="logo_image"></a>
-                <a class="btn btn-primary" th:href="@{/catalog}">Каталог товаров</a>
-                <a class="btn btn-primary" href="/login">Войти в аккаунт</a>
+        <nav class="navbar static-top header">
+            <div class="container" style="padding: 3px;">
+                <div>
+                    <a class="navbar-brand" th:href="@{/}"><img src="images/logo.png" width="330px" alt="logo_image"></a>
+                </div>
+                <div>
+                    <a class="btn btn-primary catalog_button" th:href="@{/catalog}">Каталог товаров</a>
+                    <a class="btn btn-primary" href="/login">Войти в аккаунт</a>
+                </div>
             </div>
         </nav>
         <!-- Masthead-->
@@ -30,7 +34,7 @@
                             <!-- Page heading-->
                             <div class="greeting">
                                 <div class="greeting_text">
-                                    <h1 class="mb-5">Zenith SPPS - это система оперативно-календарного планирования и диспетчерского контроля</h1>
+                                    <h1 class="mb-5"><span style="color: gold;">Zenith SPPS</span> - это система оперативно-календарного планирования и диспетчерского контроля</h1>
                                     <p>
                                         Управление и оптимизация производственной деятельности в
                                         режиме реального времени. Планирование, отслеживание и документация
@@ -166,7 +170,7 @@
                     веб-ресурсе</a></span>.</p>
         </div>
         <!-- Footer-->
-        <footer class="footer bg-light">
+        <footer class="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 h-100 text-center text-lg-start my-auto">

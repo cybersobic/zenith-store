@@ -6,21 +6,20 @@
     <link rel="icon" href="images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-    <header>
-        <div class="store_logo">
-            <a class="logo" th:href="@{/}"><img src="images/logo.png" alt="main_logo_image"></a>
+    <nav class="navbar navbar-light static-top header">
+        <div class="container">
+            <a class="navbar-brand" th:href="@{/}"><img src="images/logo.png" width="330px" alt="logo_image"></a>
+            <a class="btn btn-primary" href="/login">Войти в аккаунт</a>
         </div>
-        <div class="store_account">
-            <a href="/login" title="Авторизация"><img src="images/user_default_image.png" alt="user_basket"></a>
-        </div>
-    </header>
+    </nav>
     <main>
-        <div class="catalog_title"><h2>Каталог товаров</h2></div>
+        <div class="catalog_title"><h3>Каталог товаров</h3></div>
         <div class="catalog">
             <div class="categories">
-                <br><h3>Категории:</h3>
+                <h3>Категории:</h3>
                 <div class="categories_content">
                     <a class="category" href="#">
                         <img src="images/category_images/all.png" alt="category_image">
@@ -37,6 +36,7 @@
             <div class="product_list" id="productListContainer"></div>
         </div>
     </main>
+    
     <script src="js/catalog.js"></script>
 </body>
 </html>

@@ -2833,16 +2833,10 @@ textarea.form-control-lg {
   --bs-btn-bg: white;
   border-color: grey;
   --bs-btn-hover-color: black;
-  --bs-btn-hover-bg: rgb(212, 208, 208);
+  --bs-btn-hover-bg: #e0e0e0;
   --bs-btn-hover-border-color: grey;
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
-  --bs-btn-active-color: #dfdede;
-  --bs-btn-active-bg: #0a58ca;
-  --bs-btn-active-border-color: #0a53be;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: dfdede;
-  --bs-btn-disabled-bg: #0d6efd;
-  --bs-btn-disabled-border-color: #0d6efd;
 }
 
 .btn-secondary {
@@ -8075,7 +8069,7 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: white !important;
 }
 
 .text-black-50 {
@@ -10899,7 +10893,11 @@ header.masthead h1, header.masthead .h1 {
 }
 
 .header {
-  background-color: #e2e2e2;
+  background-color: #F3F3F7;
+}
+
+.greeting p {
+  font-size: 18px;
 }
 
 .description1 {
@@ -10913,8 +10911,9 @@ header.masthead h1, header.masthead .h1 {
 }
 
 .description2 {
-  background-color: lightgrey;
-  
+  background-color: whitesmoke;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
   padding: 2%;
   color: black;
 }
@@ -10930,6 +10929,7 @@ header.masthead h1, header.masthead .h1 {
   text-align: center;
   color: black;
   background-color: whitesmoke;
+  border-bottom: 1px solid grey;
 }
 
 .official a {
@@ -10938,4 +10938,6 @@ header.masthead h1, header.masthead .h1 {
 
 .footer {
   padding: 30px;
+  background-color: #393939;
+  color: white;
 }

@@ -1,15 +1,20 @@
 var categoriesList = document.getElementsByClassName("category");
-selectCategory(categoriesList[0]);
 
+selectCategory(categoriesList[0]);
 requestProducts(0);
+var active = 0;
 
 for (let i = 0; i < categoriesList.length; i++) 
 {
     categoriesList[i].addEventListener("click", function() 
     {
-        resetCategories();
-        selectCategory(categoriesList[i]);
-        requestProducts(i);
+        if(i != active)
+        {
+            resetCategories();
+            selectCategory(categoriesList[i]);
+            requestProducts(i);
+        }
+        active = i;
     });
 }
 

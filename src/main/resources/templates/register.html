@@ -16,7 +16,6 @@
             <form action="/register" method="post">
                 <div class="register_place">
                     <div class="register_columns">
-                        <div></div>
                         <div>
                             <p>
                                 <input type="text" id="r_login" name="login" placeholder="Придумайте логин" required>
@@ -45,14 +44,13 @@
                                 <input type="text" id="r_company" name="company" placeholder="Укажите название организации">
                             </p>
                         </div>
-                        <div></div>
                     </div>
                     <br>
                     <button type="submit" id="registerButton">Создать аккаунт</button>
                 </div>
             </form>                    
             <br><br><br><br>
-            <p>Если у вас есть аккаунт, то <a th:href="@{/login}">авторизуйтесь</a>.</p>
+            <p>Если у вас есть аккаунт, то <a id="from_reg_to_login" th:href="@{/login}">авторизуйтесь</a>.</p>
         </div>
     </div>
     <script src="js/register.js"></script>

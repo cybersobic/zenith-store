@@ -21,12 +21,12 @@
             <div class="categories">
                 <h3>Категории:</h3>
                 <div class="categories_content">
-                    <a class="category" href="#">
+                    <a class="category">
                         <img src="images/category_images/all.png" alt="category_image">
                         <p>Все товары</p>
                     </a>
                     <div th:each="ctg : ${categoryData}">
-                        <a class="category" href="#">
+                        <a class="category">
                             <img th:src="${ctg.imageLink}" alt="category_image">
                             <p th:text="${ctg.name}"></p>
                         </a>

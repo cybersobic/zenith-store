@@ -13,8 +13,9 @@ for (let i = 0; i < categoriesList.length; i++)
             resetCategories();
             selectCategory(categoriesList[i]);
             requestProducts(i);
+
+            active = i;
         }
-        active = i;
     });
 }
 
@@ -37,9 +38,7 @@ async function requestProducts(i)
 {
     try
     {
-        console.log(`Передаваемый ID: ${i}`);
-
-        const response = await fetch(`/catalog/products?categoryId=${i}`, 
+        const response = await fetch(`/catalog/products?categoryId=${i}`,
         {
             method: 'GET',
             headers: 
@@ -54,8 +53,6 @@ async function requestProducts(i)
         }
 
         const products = await response.json();
-
-        console.log(products);
 
         const productContainer = document.getElementById("productListContainer");
         

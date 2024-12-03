@@ -1,17 +1,18 @@
 package com.zspps.store.libs;
 
+import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public class Security
 {
-    public static String getHashData(String data) 
+    public static String hashDataToSHA256(String data)
     {
         try 
         {
             MessageDigest digest = MessageDigest.getInstance("SHA-256");
 
-            byte[] hashBytes = digest.digest(data.getBytes("UTF-8"));
+            byte[] hashBytes = digest.digest(data.getBytes(StandardCharsets.UTF_8));
 
             StringBuilder hexString = new StringBuilder();
 
@@ -27,9 +28,9 @@ public class Security
             
             return hexString.toString();
         }
-        catch(NoSuchAlgorithmException | java.io.UnsupportedEncodingException e) 
+        catch(NoSuchAlgorithmException e)
         {
-            e.printStackTrace();
+            e.fillInStackTrace();
         }
 
         return null;

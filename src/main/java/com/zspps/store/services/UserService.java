@@ -20,7 +20,7 @@ public class UserService
         checkPhoneNumbers(user.getPhoneNumber()) && 
         checkEmails(user.getEmail())) 
         {
-            String hashedPassword = Security.getHashData(user.getPassword());
+            String hashedPassword = Security.hashDataToSHA256(user.getPassword());
             user.setPassword(hashedPassword);
             userRepository.save(user);
         }
@@ -75,7 +75,7 @@ public class UserService
         {
             if (lg.getLogin().equals(login)) 
             {
-                String hashedPassword = Security.getHashData(password);
+                String hashedPassword = Security.hashDataToSHA256(password);
                 if (lg.getPassword().equals(hashedPassword)) 
                 {
                     return true;

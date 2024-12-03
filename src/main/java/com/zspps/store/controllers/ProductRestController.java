@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/catalog/products")
-public class CatalogRestController
+public class ProductRestController
 {
     @Autowired
     private ProductService productService;
@@ -22,7 +22,6 @@ public class CatalogRestController
             @RequestParam(required = false) Integer categoryId)
     {
         List<Product> products = productService.getProductsByCategory(categoryId);
-
         return ResponseEntity.ok(products);
     }
 }

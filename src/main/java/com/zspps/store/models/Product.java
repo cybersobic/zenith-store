@@ -30,6 +30,16 @@ public class Product
     @Column(name = "image_link", length = 70)
     private String imageLink;
 
+    public void setId(Long id)
+    {
+        this.id = id;
+    }
+
+    public Long getId()
+    {
+        return id;
+    }
+
     public void setName(String name) 
     {
         this.name = name;

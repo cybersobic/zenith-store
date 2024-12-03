@@ -69,7 +69,7 @@ async function requestProducts(i)
                     <img src="${product.imageLink}" alt="product_default_image">
                 </div>
                 <div class="product_content">
-                    <a href="#" class="product_name">${product.name}</a><br>
+                    <a href="/info?productId=${product.id}" class="product_name">${product.name}</a><br>
                     <p class="product_price">${product.price} руб.</p><br>
                 </div>
                 <div class="product_menu">
@@ -79,10 +79,11 @@ async function requestProducts(i)
 
             productContainer.appendChild(productElement);
         });
-    } 
+    }
     catch (error)
     {
         console.error('Ошибка:', error);
         return null;
     }
 }
+

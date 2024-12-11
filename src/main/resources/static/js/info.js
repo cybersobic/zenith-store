@@ -2,7 +2,7 @@ async function requestProductById(productId)
 {
     try
     {
-        const response = await fetch(`/buy/${productId}`,
+        const response = await fetch(`/info/${productId}`,
         {
             method: 'GET',
             headers: {

@@ -9,7 +9,7 @@ import com.zspps.store.models.Category;
 import com.zspps.store.repositories.CategoryRepository;
 
 @Controller
-public class CatalogController
+public class CatalogPageController
 {
     @Autowired
     private CategoryRepository categoryRepository;
@@ -17,7 +17,7 @@ public class CatalogController
     @GetMapping("/catalog")
     public String getCatalogPage(Model model)
     {
-        model.addAttribute("title", "Zenith Софт - Каталог товаров");
+        model.addAttribute("title", "Zenith Store - Каталог товаров");
 
         List<Category> categoryData = categoryRepository.findAllCategoryData();
         model.addAttribute("categoryData", categoryData);

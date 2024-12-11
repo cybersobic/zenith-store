@@ -7,14 +7,15 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/buy")
-public class BuyRestController
+@RequestMapping("/info")
+public class ProductInfoController
 {
     @Autowired
     private ProductService productService;
 
     @GetMapping("/{id}")
-    public ResponseEntity<Product> getProductToBuy(@PathVariable Long id) {
+    public ResponseEntity<Product> getProductToBuy(@PathVariable Long id)
+    {
         Product product = productService.getProductById(id);
         return ResponseEntity.ok(product);
     }

@@ -20,7 +20,7 @@ public class JwtTokenController
 
     @PostMapping("/login")
     @ResponseBody
-    public ResponseEntity<?> loginUser(@RequestBody LoginData loginData)
+    public ResponseEntity<?> AuthorizeJwtToken(@RequestBody LoginData loginData)
     {
         boolean isAuthenticated = userService.loginUser(loginData.getLogin(), loginData.getPassword());
 

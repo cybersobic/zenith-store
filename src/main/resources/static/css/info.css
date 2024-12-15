@@ -1,9 +1,120 @@
+/* Базовые стили */
 .info_title {
     background-color: #F3F3F7;
     margin: 20px;
     padding: 15px 10px 10px 10px;
-    text-align: center;
     border-radius: 5px;
-    font-size: 1.5rem;
+    text-align: center;
+}
+.info_content {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 20px;
+    padding: 50px;
+}
+.back_to_catalog {
+    margin: 20px;
+}
+.product_image {
+    width: 100%;
+    max-width: 400px;
+}
+.product_name {
+    font-size: 30px;
+}
+.product_price {
+    font-size: 20px;
     font-weight: bold;
+}
+.product_description {
+    font-size: 20px;
+}
+.buy_product {
+    background-color: #546973;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: auto;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+.buy_product:hover {
+    background-color: #758688;
+    color: white;
+}
+
+/* Адаптивные стили */
+@media (max-width: 1024px) {
+    .info_content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .product_name {
+        font-size: 28px;
+    }
+
+    .product_price, .product_description {
+        font-size: 18px;
+    }
+
+    .buy_product {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .back_to_catalog {
+        text-align: center;
+    }
+
+    .info_content {
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .product_name {
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .product_price, .product_description {
+        font-size: 20px;
+    }
+
+    .buy_product {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .product_image {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .info_content {
+        padding: 10px;
+    }
+
+    .product_name {
+        font-size: 20px;
+    }
+
+    .product_price, .product_description {
+        font-size: 14px;
+    }
+
+    .buy_product {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+
+    .product_image {
+        max-width: 200px;
+    }
 }

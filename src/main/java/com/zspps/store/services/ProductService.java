@@ -1,8 +1,6 @@
 package com.zspps.store.services;
 
 import java.util.List;
-import java.util.Optional;
-
 import com.zspps.store.libs.ProductSpecification;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;

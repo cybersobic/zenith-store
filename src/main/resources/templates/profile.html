@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}"></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+    <nav class="navbar navbar-light static-top header">
+        <div class="container">
+            <a class="navbar-brand" th:href="@{/}"><img src="images/logo.png" width="330px" alt="logo_image"></a>
+            <a id="exitButton" class="btn btn-primary">Выйти из аккаунта</a>
+        </div>
+    </nav>
+    <main>
+        <div><h3 style="text-align: center;">Данные профиля:</h3></div>
+        <div id="accInfo"></div>
+    </main>
+    <script src="js/requestUserData.js"></script>
+    <script src="js/exitAccount.js"></script>
+</body>
+</html>

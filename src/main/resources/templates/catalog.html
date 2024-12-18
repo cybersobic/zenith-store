@@ -13,7 +13,7 @@
     <nav class="navbar navbar-light static-top header">
         <div class="container">
             <a class="navbar-brand" th:href="@{/}"><img src="images/logo.png" width="330px" alt="logo_image"></a>
-            <a class="btn btn-primary" href="/login">Войти в аккаунт</a>
+            <a id="lgBut" class="btn btn-primary" href="/login">Войти в аккаунт</a>
         </div>
     </nav>
     <main>
@@ -37,7 +37,8 @@
             <div class="product_list" id="productListContainer"></div>
         </div>
     </main>
-    
+
+    <script src="js/checkLoginWithToken.js"></script>
     <script src="js/catalog.js"></script>
 </body>
 </html>

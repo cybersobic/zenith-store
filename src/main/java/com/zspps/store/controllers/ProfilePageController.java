@@ -1,0 +1,16 @@
+package com.zspps.store.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class ProfilePageController
+{
+    @GetMapping("/profile")
+    public String getProfilePage(Model model)
+    {
+        model.addAttribute("title", "Zenith Store - Мой профиль");
+        return "profile";
+    }
+}

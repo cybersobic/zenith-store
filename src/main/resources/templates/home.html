@@ -9,7 +9,6 @@
         <link rel="icon" type="image/x-icon" href="images/icon.png" />
         <link href="css/main.css" rel="stylesheet" />
         <link href="css/home.css" rel="stylesheet" />
-        <script src="js/checkLoginWithToken.js"></script>
     </head>
     <body>
         <!-- Navigation-->
@@ -20,7 +19,7 @@
                 </div>
                 <div>
                     <a class="btn btn-primary catalog_button" th:href="@{/catalog}">Каталог товаров</a>
-                    <a class="btn btn-primary" href="/login">Войти в аккаунт</a>
+                    <a id="lgBut" class="btn btn-primary" href="/login">Войти в аккаунт</a>
                 </div>
             </div>
         </nav>
@@ -202,5 +201,6 @@
                 </div>
             </div>
         </footer>
+        <script src="js/checkLoginWithToken.js"></script>
     </body>
 </html>

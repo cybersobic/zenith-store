@@ -64,3 +64,7 @@ if(token !== null)
 
     requestUserData(token, parsedToken.sub);
 }
+else
+{
+    window.location.href = "/login";
+}

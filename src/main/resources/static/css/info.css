@@ -1,4 +1,7 @@
 /* Базовые стили */
+.navbar {
+    border-bottom: 1px solid grey;
+}
 .info_title {
     background-color: #F3F3F7;
     margin: 20px;

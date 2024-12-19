@@ -1,5 +1,4 @@
-function changeElements()
-{
+function changeElements() {
     const loginButton = document.getElementById("lgBut");
     loginButton.textContent = "✪ Мой профиль";
     loginButton.href = "/profile";
@@ -7,8 +6,7 @@ function changeElements()
 
 const token = localStorage.getItem('token');
 
-if(token !== null)
-{
+if(token !== null) {
     changeElements();
 }
 

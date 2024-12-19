@@ -12,14 +12,12 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/catalog/products")
-public class ProductController
-{
+public class ProductController {
     @Autowired
     private ProductService productService;
 
     @GetMapping
-    public ResponseEntity<List<Product>> getProductsInCategory(@RequestParam(required = false) Integer categoryId)
-    {
+    public ResponseEntity<List<Product>> getProductsInCategory(@RequestParam(required = false) Integer categoryId) {
         List<Product> products = productService.getProductsByCategory(categoryId);
         return ResponseEntity.ok(products);
     }

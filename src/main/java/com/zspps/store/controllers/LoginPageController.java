@@ -5,11 +5,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class LoginPageController
-{
+public class LoginPageController {
     @GetMapping("/login")
-    public String getLoginPage(Model model)
-    {
+    public String getLoginPage(Model model) {
         model.addAttribute("title", "Zenith Store - Авторизация");
         return "login";
     }

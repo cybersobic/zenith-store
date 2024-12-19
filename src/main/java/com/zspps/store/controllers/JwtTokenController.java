@@ -10,8 +10,7 @@ import com.zspps.store.services.UserService;
 
 @RestController
 @RequestMapping("/auth")
-public class JwtTokenController
-{
+public class JwtTokenController {
     @Autowired
     private JwtTokenService jwtTokenService;
 
@@ -20,17 +19,14 @@ public class JwtTokenController
 
     @PostMapping("/login")
     @ResponseBody
-    public ResponseEntity<?> AuthorizeJwtToken(@RequestBody LoginData loginData)
-    {
+    public ResponseEntity<?> AuthorizeJwtToken(@RequestBody LoginData loginData) {
         boolean isAuthenticated = userService.loginUser(loginData.getLogin(), loginData.getPassword());
 
-        if(isAuthenticated)
-        {
+        if(isAuthenticated) {
             String token = jwtTokenService.generateToken(loginData.getLogin());
             return ResponseEntity.ok(new AuthResponse(token));
         }
-        else
-        {
+        else {
             return ResponseEntity.status(401).body("Неверный логин или пароль");
         }
     }

@@ -36,73 +36,59 @@ public class User
     @Column(name = "company", length = 50)
     private String company;
 
-    public void setLogin(String login) 
-    {
+    public void setLogin(String login) {
         this.login = login;
     }
 
-    public String getLogin() 
-    {
+    public String getLogin() {
         return login;
     }
 
-    public void setPassword(String password) 
-    {
+    public void setPassword(String password) {
         this.password = password;
     }
 
-    public String getPassword() 
-    {
+    public String getPassword() {
         return password;
     }
 
-    public void setPhoneNumber(String phone_number) 
-    {
+    public void setPhoneNumber(String phone_number) {
         this.phoneNumber = phone_number;
     }
 
-    public String getPhoneNumber() 
-    {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setEmail(String email) 
-    {
+    public void setEmail(String email) {
         this.email = email;
     }
 
-    public String getEmail() 
-    {
+    public String getEmail() {
         return email;
     }
 
-    public void setFirstName(String first_name) 
-    {
+    public void setFirstName(String first_name) {
         this.firstName = first_name;
     }
 
-    public String getFirstName() 
-    {
+    public String getFirstName() {
         return firstName;
     }
 
-    public void setLastName(String last_name) 
-    {
+    public void setLastName(String last_name) {
         this.lastName = last_name;
     }
 
-    public String getLastName() 
-    {
+    public String getLastName() {
         return lastName;
     }
 
-    public void setCompany(String company) 
-    {
+    public void setCompany(String company) {
         this.company = company;
     }
     
-    public String getCompany() 
-    {
+    public String getCompany() {
         return company;
     }
 }

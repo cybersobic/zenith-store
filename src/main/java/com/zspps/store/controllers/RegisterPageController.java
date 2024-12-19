@@ -10,22 +10,19 @@ import com.zspps.store.services.UserService;
 import com.zspps.store.models.User;
 
 @Controller
-public class RegisterPageController
-{
+public class RegisterPageController {
     @Autowired
     private UserService userService;
     
     @GetMapping("/register")
-    public String getRegisterPage(Model model)
-    {
+    public String getRegisterPage(Model model) {
         model.addAttribute("user", new User());
         model.addAttribute("title", "Zenith Store - Регистрация");
         return "register";
     }
 
     @PostMapping("/register")
-    public String sendRegisterData(@ModelAttribute User user)
-    {
+    public String sendRegisterData(@ModelAttribute User user) {
         userService.registerUser(user);
         return "redirect:/login";
     }

@@ -9,8 +9,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "products")
-public class Product 
-{
+public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -30,63 +29,51 @@ public class Product
     @Column(name = "image_link", length = 70)
     private String imageLink;
 
-    public void setId(Long id)
-    {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public Long getId()
-    {
+    public Long getId() {
         return id;
     }
 
-    public void setName(String name) 
-    {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public String getName()
-    {
+    public String getName() {
         return name;
     }
 
-    public void setCategoryId(int category_id) 
-    {
+    public void setCategoryId(int category_id) {
         this.categoryId = category_id;
     }
 
-    public int getCategoryId() 
-    {
+    public int getCategoryId() {
         return categoryId;
     }
 
-    public void setPrice(int price) 
-    {
+    public void setPrice(int price) {
         this.price = price;
     }
 
-    public int getPrice() 
-    {
+    public int getPrice() {
         return price;
     }
 
-    public void setDescription(String description) 
-    {
+    public void setDescription(String description) {
         this.description = description;
     }
 
-    public String getDescription() 
-    {
+    public String getDescription() {
         return description;
     }
 
-    public void setImageLink(String imageLink) 
-    {
+    public void setImageLink(String imageLink) {
         this.imageLink = imageLink;
     }
 
-    public String getImageLink() 
-    {
+    public String getImageLink() {
         return imageLink;
     }
 }

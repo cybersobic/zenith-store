@@ -10893,7 +10893,7 @@ header.masthead h1, header.masthead .h1 {
 }
 
 .header {
-  background-color: #F3F3F7;
+  background-color: whitesmoke;
 }
 
 .greeting p {
@@ -10912,8 +10912,6 @@ header.masthead h1, header.masthead .h1 {
 
 .description2 {
   background-color: whitesmoke;
-  border-bottom: 1px solid grey;
-  border-top: 1px solid grey;
   padding: 2%;
   color: black;
 }
@@ -10928,7 +10926,7 @@ header.masthead h1, header.masthead .h1 {
   padding: 2% 3% 2% 3%;
   text-align: center;
   color: black;
-  background-color: whitesmoke;
+  background-color: white;
   border-bottom: 1px solid grey;
 }
 

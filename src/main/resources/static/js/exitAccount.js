@@ -1,5 +1,4 @@
-function exitAccount()
-{
+function exitAccount() {
     const token = localStorage.getItem("token");
 
     localStorage.removeItem("token");

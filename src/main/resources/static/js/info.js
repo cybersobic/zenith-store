@@ -1,17 +1,13 @@
-async function requestProductById(productId)
-{
-    try
-    {
-        const response = await fetch(`/info/${productId}`,
-        {
+async function requestProductById(productId) {
+    try {
+        const response = await fetch(`/info/${productId}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
             },
         });
 
-        if (!response.ok)
-        {
+        if (!response.ok) {
             throw new Error('Ошибка при получении данных о товарах');
         }
 
@@ -36,8 +32,7 @@ async function requestProductById(productId)
             </div>
         `;
     }
-    catch (error)
-    {
+    catch (error) {
         console.error('Ошибка:', error);
     }
 }
@@ -46,7 +41,6 @@ const urlParams = new URLSearchParams(window.location.search);
 
 const productId = urlParams.get('productId');
 
-if (productId)
-{
+if (productId) {
     requestProductById(productId);
 }

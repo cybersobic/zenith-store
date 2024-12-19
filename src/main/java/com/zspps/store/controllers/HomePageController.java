@@ -5,11 +5,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class HomePageController
-{
+public class HomePageController {
     @GetMapping("/")
-    public String getHomePage(Model model)
-    {
+    public String getHomePage(Model model) {
         model.addAttribute("title", "Zenith Store - Главная страница");
         return "home";
     }

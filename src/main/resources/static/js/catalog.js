@@ -4,12 +4,9 @@ selectCategory(categoriesList[0]);
 requestProducts(0);
 var active = 0;
 
-for (let i = 0; i < categoriesList.length; i++) 
-{
-    categoriesList[i].addEventListener("click", function() 
-    {
-        if(i != active)
-        {
+for (let i = 0; i < categoriesList.length; i++) {
+    categoriesList[i].addEventListener("click", function() {
+        if(i != active) {
             resetCategories();
             selectCategory(categoriesList[i]);
             requestProducts(i);
@@ -19,36 +16,28 @@ for (let i = 0; i < categoriesList.length; i++)
     });
 }
 
-function selectCategory(category)
-{
+function selectCategory(category) {
     category.style.backgroundColor = "#546973";
     category.style.color = "white";
 }
 
-function resetCategories() 
-{
-    for (let i = 0; i < categoriesList.length; i++) 
-    {
+function resetCategories() {
+    for (let i = 0; i < categoriesList.length; i++) {
         categoriesList[i].style.backgroundColor = "";
         categoriesList[i].style.color = "";
     }
 }
 
-async function requestProducts(i)
-{
-    try
-    {
-        const response = await fetch(`/catalog/products?categoryId=${i}`,
-        {
+async function requestProducts(i) {
+    try {
+        const response = await fetch(`/catalog/products?categoryId=${i}`, {
             method: 'GET',
-            headers: 
-            {
+            headers: {
                 'Content-Type': 'application/json',
             },
         });
 
-        if (!response.ok)
-        {
+        if (!response.ok) {
             throw new Error('Ошибка при получении данных о товарах');
         }
 
@@ -58,8 +47,7 @@ async function requestProducts(i)
         
         productContainer.innerHTML = '';
 
-        products.forEach(product => 
-        {
+        products.forEach(product => {
             const productElement = document.createElement('div');
             
             productElement.classList.add('prods');
@@ -80,8 +68,7 @@ async function requestProducts(i)
             productContainer.appendChild(productElement);
         });
     }
-    catch (error)
-    {
+    catch (error) {
         console.error('Ошибка:', error);
         return null;
     }

@@ -5,11 +5,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class ProfilePageController
-{
+public class ProfilePageController {
     @GetMapping("/profile")
-    public String getProfilePage(Model model)
-    {
+    public String getProfilePage(Model model) {
         model.addAttribute("title", "Zenith Store - Мой профиль");
         return "profile";
     }

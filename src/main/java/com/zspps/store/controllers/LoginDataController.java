@@ -7,19 +7,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import java.util.HashMap;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/login")
-public class LoginDataController
-{
+public class LoginDataController {
     @Autowired
     private UserService userService;
 
     @GetMapping("/getUserData")
-    public ResponseEntity<HashMap<String, String>> getUserData(@RequestParam(required = false) String login)
-    {
-        HashMap<String, String> userData = userService.getUserData(login);
+    public ResponseEntity<Map<String, String>> getUserData(@RequestParam(required = false) String login) {
+        Map<String, String> userData = userService.getUserData(login);
         return ResponseEntity.ok(userData);
     }
 }

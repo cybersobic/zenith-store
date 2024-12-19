@@ -13,17 +13,14 @@ import com.zspps.store.models.Product;
 import com.zspps.store.repositories.ProductRepository;
 
 @Service
-public class ProductService 
-{
+public class ProductService {
     @Autowired
     private ProductRepository productRepository;
 
-    public List<Product> getProductsByCategory(Integer categoryId)
-    {
+    public List<Product> getProductsByCategory(Integer categoryId) {
         Specification<Product> specification = Specification.where(null);
 
-        if(categoryId != null && categoryId != 0)
-        {
+        if(categoryId != null && categoryId != 0) {
             specification = specification.and(ProductSpecification.categoryFilter(categoryId));
         }
 
@@ -37,13 +34,11 @@ public class ProductService
         return productRepository.findAll(specification, pageable).getContent();
     }
 
-    public Product getProductById(Long id)
-    {
+    public Product getProductById(Long id) {
         return productRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("Ошибка. Товар не найден!"));
     }
 
-    public Integer getAllProductsCount()
-    {
+    public Integer getAllProductsCount() {
         return (int) productRepository.count();
     }
 }

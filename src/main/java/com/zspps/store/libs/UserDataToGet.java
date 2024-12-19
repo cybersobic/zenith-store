@@ -1,7 +1,6 @@
 package com.zspps.store.libs;
 
-public class UserDataToGet
-{
+public class UserDataToGet {
     private String login;
     private String phoneNumber;
     private String email;
@@ -9,8 +8,7 @@ public class UserDataToGet
     private String lastName;
     private String company;
 
-    public UserDataToGet(String login, String phoneNumber, String email, String firstName, String lastName, String company)
-    {
+    public UserDataToGet(String login, String phoneNumber, String email, String firstName, String lastName, String company) {
         this.login = login;
         this.phoneNumber = phoneNumber;
         this.email = email;
@@ -19,63 +17,51 @@ public class UserDataToGet
         this.company = company;
     }
 
-    public String getLogin()
-    {
+    public String getLogin() {
         return login;
     }
 
-    public void setLogin(String login)
-    {
+    public void setLogin(String login) {
         this.login = login;
     }
 
-    public String getPhoneNumber()
-    {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(String phoneNumber)
-    {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
-    public String getEmail()
-    {
+    public String getEmail() {
         return email;
     }
 
-    public void setEmail(String email)
-    {
+    public void setEmail(String email) {
         this.email = email;
     }
 
-    public String getFirstName()
-    {
+    public String getFirstName() {
         return firstName;
     }
 
-    public void setFirstName(String firstName)
-    {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
-    public String getLastName()
-    {
+    public String getLastName() {
         return lastName;
     }
 
-    public void setLastName(String lastName)
-    {
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    public String getCompany()
-    {
+    public String getCompany() {
         return company;
     }
 
-    public void setCompany(String company)
-    {
+    public void setCompany(String company) {
         this.company = company;
     }
 }

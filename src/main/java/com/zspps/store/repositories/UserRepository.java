@@ -8,8 +8,7 @@ import com.zspps.store.libs.LoginData;
 import com.zspps.store.models.User;
 import org.springframework.data.repository.query.Param;
 
-public interface UserRepository extends JpaRepository<User, Long> 
-{
+public interface UserRepository extends JpaRepository<User, Long> {
     @Query("SELECT u.login FROM User u")
     List<String> findAllLogins();
 

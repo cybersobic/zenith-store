@@ -8,14 +8,12 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/info")
-public class ProductInfoController
-{
+public class ProductInfoController {
     @Autowired
     private ProductService productService;
 
     @GetMapping("/{id}")
-    public ResponseEntity<Product> getProductToBuy(@PathVariable Long id)
-    {
+    public ResponseEntity<Product> getProductData(@PathVariable Long id) {
         Product product = productService.getProductById(id);
         return ResponseEntity.ok(product);
     }

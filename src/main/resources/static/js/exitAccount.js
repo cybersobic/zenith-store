@@ -1,9 +1,11 @@
 function exitAccount() {
-    const token = localStorage.getItem("token");
+    if (window.confirm("Вы действительно хотите выйти из аккаунта?")) {
+        const token = localStorage.getItem("token");
 
-    localStorage.removeItem("token");
+        localStorage.removeItem("token");
 
-    window.location.href = "/";
+        window.location.href = "/";
+    }
 }
 
 const exitButton = document.getElementById("exitButton");

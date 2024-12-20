@@ -38,12 +38,12 @@ function outputData(userData) {
     const accountInfoDiv = document.getElementById("accInfo");
 
     accountInfoDiv.innerHTML = `
-        <p>Логин: ${userData.login}</p>
-        <p>Адрес электронной почты: ${userData.email}</p>
-        <p>Номер телефона: ${userData.phoneNumber}</p>
-        <p>Имя: ${userData.firstName}</p>
-        <p>Фамилия: ${userData.lastName}</p>
-        <p>Название организации: ${userData.company}</p>
+        <p><span>Логин: </span>${userData.login}</p></br>
+        <p><span>Адрес электронной почты: </span>${userData.email}</p></br>
+        <p><span>Номер телефона: </span>${userData.phoneNumber}</p></br>
+        <p><span>Имя: </span>${userData.firstName}</p></br>
+        <p><span>Фамилия: </span>${userData.lastName}</p></br>
+        <p><span>Название организации: </span>${userData.company}</p>
     `;
 }
 

@@ -2,10 +2,10 @@ FROM openjdk:21-slim
 
 WORKDIR /app
 
-ARG JAR_FILE=target/store-0.0.1-SNAPSHOT.jar
+COPY . .
 
-COPY ${JAR_FILE} app.jar
+RUN ./mvnw clean package
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "target/store-0.0.1-SNAPSHOT.jar"]

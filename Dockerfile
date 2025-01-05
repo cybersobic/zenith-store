@@ -6,6 +6,6 @@ COPY . .
 
 RUN ./mvnw clean package
 
-EXPOSE 8080
+EXPOSE 80
 
 ENTRYPOINT ["java", "-jar", "target/store-0.0.1-SNAPSHOT.jar"]

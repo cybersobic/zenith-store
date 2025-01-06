@@ -10896,6 +10896,10 @@ header.masthead h1, header.masthead .h1 {
   background-color: whitesmoke;
 }
 
+#header_in_home {
+  box-shadow: inset 0px -5px 7px rgba(0, 0, 0, 0.3);
+}
+
 .greeting p {
   font-size: 18px;
 }

@@ -31,6 +31,14 @@ async function requestProductById(productId) {
                 </div>
             </div>
         `;
+	
+        const buyButton = productInfo.querySelector('.buy_product');
+            
+        buyButton.addEventListener('click', function(event) {
+            event.preventDefault();
+            alert(`Приносим свои извинения! Данный функционал находится в разработке...`);
+        });
+
     }
     catch (error) {
         console.error('Ошибка:', error);

@@ -65,6 +65,13 @@ async function requestProducts(i) {
                 </div>
             `;
 
+            const buyButton = productElement.querySelector('.buy_product');
+            
+            buyButton.addEventListener('click', function(event) {
+                event.preventDefault();
+                alert(`Приносим свои извинения! Данный функционал находится в разработке...`);
+            });
+
             productContainer.appendChild(productElement);
         });
     }
